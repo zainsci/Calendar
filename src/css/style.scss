@@ -1,3 +1,9 @@
+$green: #06d6a0;
+$blue: #118ab2;
+$yellow: #ffd166;
+$dark: #073b4c;
+$red: #ef476f;
+
 * {
   padding: 0;
   margin: 0;
@@ -18,35 +24,56 @@ ol {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .header-year,
 .header-month,
 .header-events {
-  width: 140px;
+  width: 160px;
   border: 1px solid #ddd;
   height: 40px;
-  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
 }
 
 .header-year-list,
 .header-month-list,
 .header-events-list {
+  padding: 0 10px;
+  width: 100%;
+  display: none;
   ul {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #efefef;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left !important;
+    box-shadow: 0px 5px 10px 0px rgba(238, 238, 238, 1);
+    position: absolute;
+    top: 50px;
+    left: 0;
     li {
-      height: 40px;
-      padding: 8px 0;
+      padding: 8px 12px;
+      text-align: left;
+      cursor: pointer;
+      overflow: hidden;
+      &:hover {
+        background-color: #efefef;
+      }
     }
   }
 }
 
+.next-month {
+  color: #777;
+}
+
 .box {
   width: 90px;
-  border: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding: 5px;
 }
 .date {
@@ -56,26 +83,56 @@ ol {
 .container {
   width: 880px;
   height: 580px;
-  border: 1px solid black;
+  border-top: 5px solid $green;
   display: flex;
   justify-content: center;
   align-items: center;
   #Main {
     width: 660px;
     height: 100%;
+    padding: 15px;
     border: 1px solid black;
     header {
       width: 100%;
       height: 60px;
-      padding: 0 10px;
       display: flex;
       justify-content: left;
       align-items: center;
-      border: 1px solid black;
+      margin-bottom: 10px;
+      .header-box {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        cursor: pointer;
+        padding: 8px 12px;
+        overflow: hidden;
+        white-space: nowrap;
+        &:hover {
+          background-color: #efefef;
+        }
+      }
+      .header-year {
+        #HeaderYear {
+        }
+      }
+      .header-month {
+        #HeaderMonth {
+        }
+      }
+      .header-events {
+        #HeaderEvent {
+        }
+      }
     }
     main {
       width: 100%;
+      .days {
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+      }
       .weekdays {
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
         margin-bottom: 10px;
       }
     }
