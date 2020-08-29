@@ -35,9 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
       li.classList = "date box";
       li.id = `${thisYear}${thisMonth}${day}`;
       li.innerHTML = day;
+      li.addEventListener("click", () => {
+        showDateAndEvents();
+      });
       ul.appendChild(li);
     });
     div.appendChild(ul);
     monthGridDOM.appendChild(div);
   });
 });
+
+function showDateAndEvents() {}
