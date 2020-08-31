@@ -17,7 +17,7 @@ function printCalendar(calendar) {
 
     if (calendar[i] > 7 && i < 7) {
       li.classList = "previous-month date box";
-    } else if (calendar[i] < 7 && i > 28) {
+    } else if (calendar[i] < 14 && i > 28) {
       li.classList = "next-month date box";
     } else {
       li.classList = "date box";
@@ -43,6 +43,8 @@ function getCalender(y, m) {
   const calendarGrid = [];
   y = parseInt(y, 10);
   m = parseInt(m, 10);
+  console.log(y);
+  console.log(m);
 
   const preYear = y - 1;
   const nextYear = y + 1;

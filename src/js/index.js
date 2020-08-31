@@ -27,6 +27,14 @@ headerValues.forEach((elem) => {
       item.addEventListener("click", () => {
         document.getElementById(elem).innerHTML = itemName;
         e.style.display = "none";
+
+        const year = +document.getElementById("HeaderYear").innerHTML;
+        const month = +monthNo[
+          document.getElementById("HeaderMonth").innerHTML
+        ];
+
+        const calendar = getCalender(year, month);
+        printCalendar(calendar);
       });
     });
   });
@@ -42,8 +50,6 @@ function toggleDisplay(elem) {
   }
 }
 
-const dayList = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
 const monthList = [
   "January",
   "February",
@@ -58,3 +64,18 @@ const monthList = [
   "November",
   "December",
 ];
+
+const monthNo = {
+  January: 1,
+  February: 2,
+  March: 3,
+  April: 4,
+  May: 5,
+  June: 6,
+  July: 7,
+  August: 8,
+  September: 9,
+  October: 10,
+  November: 11,
+  December: 12,
+};
