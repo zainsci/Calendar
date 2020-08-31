@@ -1,0 +1,23 @@
+{
+  "name": "calender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^10.1.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zainsci/Calender.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zainsci/Calender/issues"
+  },
+  "homepage": "https://github.com/zainsci/Calender#readme"
+}

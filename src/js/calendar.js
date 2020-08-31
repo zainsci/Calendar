@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
   printCalendar(calendar);
 });
 
+const dayName = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
 // Month In DOM
 function printCalendar(calendar) {
   const monthGridDOM = document.getElementById("monthGrid");
@@ -25,7 +35,7 @@ function printCalendar(calendar) {
 
     li.innerHTML = calendar[i];
     li.addEventListener("click", () => {
-      showDateAndEvents(calendar[i]);
+      showDateAndEvents(calendar[i], i);
     });
     ul.appendChild(li);
   }
@@ -34,7 +44,13 @@ function printCalendar(calendar) {
   monthGridDOM.appendChild(div);
 }
 
-function showDateAndEvents(day) {
+function showDateAndEvents(day, i) {
+  const year = document.getElementById("HeaderYear").innerHTML;
+  const month = document.getElementById("HeaderMonth").innerHTML.slice(0, 3);
+  const daysName = dayName[i % 7];
+  document.getElementById("select").innerHTML = `
+  ${month} ${day}, ${year} - ${daysName.slice(0, 3)}
+  `;
   document.getElementById("selectedDay").innerHTML = day;
 }
 
@@ -43,8 +59,6 @@ function getCalender(y, m) {
   const calendarGrid = [];
   y = parseInt(y, 10);
   m = parseInt(m, 10);
-  console.log(y);
-  console.log(m);
 
   const preYear = y - 1;
   const nextYear = y + 1;
