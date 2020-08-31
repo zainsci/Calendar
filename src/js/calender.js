@@ -25,14 +25,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const monthGridDOM = document.getElementById("monthGrid");
   monthGridDOM.innerHTML = "";
 
-  calenderGrid.forEach((row) => {
+  for (let i = 0; i < calenderGrid.length; i++) {
     const div = document.createElement("div");
     div.className = "days-row";
     const ul = document.createElement("ul");
 
-    row.forEach((day) => {
+    calenderGrid[i].forEach((day) => {
       const li = document.createElement("li");
-      li.classList = "date box";
+      if (i == 0) {
+        if (day > 7) {
+          li.classList = "previous-month date box";
+        } else {
+          li.classList = "date box";
+        }
+      } else if (i == calenderGrid.length - 1) {
+        if (day < 28) {
+          li.classList = "next-month date box";
+        } else {
+          li.classList = "date box";
+        }
+      } else {
+        li.classList = "date box";
+      }
       li.id = `${thisYear}${thisMonth}${day}`;
       li.innerHTML = day;
       li.addEventListener("click", () => {
@@ -42,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     div.appendChild(ul);
     monthGridDOM.appendChild(div);
-  });
+  }
 });
 
 function showDateAndEvents() {}

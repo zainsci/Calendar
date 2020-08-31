@@ -126,6 +126,10 @@ ol {
     }
     main {
       width: 100%;
+      .previous-month,
+      .next-month {
+        color: #bbb;
+      }
       .days {
         border-top: 1px solid #eee;
         border-left: 1px solid #eee;
