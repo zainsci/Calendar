@@ -4,6 +4,36 @@ document.addEventListener("DOMContentLoaded", () => {
   printCalendar(calendar);
 });
 
+const monthList = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const monthNo = {
+  January: 1,
+  February: 2,
+  March: 3,
+  April: 4,
+  May: 5,
+  June: 6,
+  July: 7,
+  August: 8,
+  September: 9,
+  October: 10,
+  November: 11,
+  December: 12,
+};
+
 const dayName = [
   "Sunday",
   "Monday",
@@ -28,8 +58,14 @@ function printCalendar(calendar) {
 
     if (calendar[i] > 7 && i < 7) {
       li.classList = "previous-month date box";
+      li.addEventListener("click", () => {
+        showPreviousMonth(calendar[i], i);
+      });
     } else if (calendar[i] < 14 && i > 28) {
       li.classList = "next-month date box";
+      li.addEventListener("click", () => {
+        showNextMonth(calendar[i], i);
+      });
     } else {
       li.classList = "this-month date box";
 
@@ -55,6 +91,45 @@ function showDateAndEvents(day, i) {
   `;
   document.getElementById("selectedDay").innerHTML = day;
   showEventsInSection(month, day);
+}
+
+function showPreviousMonth() {
+  const currentMonth = document.getElementById("HeaderMonth");
+  const currentYear = document.getElementById("HeaderYear");
+
+  let month = parseInt(monthNo[currentMonth.innerHTML], 10);
+  let year = parseInt(currentYear.innerHTML, 10);
+
+  if (month == 1) {
+    month = 12;
+    year -= 1;
+  } else {
+    month -= 1;
+  }
+  const calendar = getCalender(year, month);
+  printCalendar(calendar);
+  currentMonth.innerHTML = monthList[month - 1];
+  currentYear.innerHTML = year;
+  showEvents();
+}
+function showNextMonth() {
+  const currentMonth = document.getElementById("HeaderMonth");
+  const currentYear = document.getElementById("HeaderYear");
+
+  let month = parseInt(monthNo[currentMonth.innerHTML], 10);
+  let year = parseInt(currentYear.innerHTML, 10);
+
+  if (month == 12) {
+    month = 1;
+    year += 1;
+  } else {
+    month += 1;
+  }
+  const calendar = getCalender(year, month);
+  printCalendar(calendar);
+  currentMonth.innerHTML = monthList[month - 1];
+  currentYear.innerHTML = year;
+  showEvents();
 }
 
 //
