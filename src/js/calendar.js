@@ -32,12 +32,13 @@ function printCalendar(calendar) {
       li.classList = "next-month date box";
     } else {
       li.classList = "this-month date box";
-    }
 
+      li.addEventListener("click", () => {
+        showDateAndEvents(calendar[i], i);
+      });
+    }
     li.innerHTML = calendar[i];
-    li.addEventListener("click", () => {
-      showDateAndEvents(calendar[i], i);
-    });
+
     ul.appendChild(li);
   }
 
@@ -47,12 +48,13 @@ function printCalendar(calendar) {
 
 function showDateAndEvents(day, i) {
   const year = document.getElementById("HeaderYear").innerHTML;
-  const month = document.getElementById("HeaderMonth").innerHTML.slice(0, 3);
+  const month = document.getElementById("HeaderMonth").innerHTML;
   const daysName = dayName[i % 7];
   document.getElementById("select").innerHTML = `
-  ${month} ${day}, ${year} - ${daysName.slice(0, 3)}
+  ${month.slice(0, 3)} ${day}, ${year} - ${daysName.slice(0, 3)}
   `;
   document.getElementById("selectedDay").innerHTML = day;
+  showEventsInSection(month, day);
 }
 
 //

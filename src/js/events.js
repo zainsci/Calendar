@@ -22,4 +22,24 @@ function showEvents() {
     });
 }
 
+function showEventsInSection(month, day) {
+  fetch("./js/json/events.json")
+    .then((res) => res.json())
+    .then((data) => {
+      var allEvents = data;
+
+      if (allEvents[`${day} ${month}`]) {
+        const eventsDiv = document.getElementById("eventsList");
+        eventsDiv.innerHTML = "";
+        allEvents[`${day} ${month}`].forEach((elem) => {
+          const div = document.createElement("div");
+          div.classList = `event ${elem.type}`;
+          div.innerHTML = elem.name;
+
+          eventsDiv.appendChild(div);
+        });
+      }
+    });
+}
+
 showEvents();
