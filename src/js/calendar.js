@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const d = new Date();
   const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
   printCalendar(calendar);
+  showDateAndEvents(d.getDate(), d.getDay());
 });
 
 const monthList = [
@@ -70,7 +71,7 @@ function printCalendar(calendar) {
       li.classList = "this-month date box";
 
       li.addEventListener("click", () => {
-        showDateAndEvents(calendar[i], i);
+        showDateAndEvents(calendar[i], i % 7);
       });
     }
     li.innerHTML = calendar[i];
@@ -85,7 +86,7 @@ function printCalendar(calendar) {
 function showDateAndEvents(day, i) {
   const year = document.getElementById("HeaderYear").innerHTML;
   const month = document.getElementById("HeaderMonth").innerHTML;
-  const daysName = dayName[i % 7];
+  const daysName = dayName[i];
   document.getElementById("select").innerHTML = `
   ${month.slice(0, 3)} ${day}, ${year} - ${daysName.slice(0, 3)}
   `;

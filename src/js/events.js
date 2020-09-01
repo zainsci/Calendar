@@ -35,11 +35,30 @@ function showEventsInSection(month, day) {
           const div = document.createElement("div");
           div.classList = `event ${elem.type}`;
           div.innerHTML = elem.name;
+          div.addEventListener("click", () => {
+            showEventDetails(elem.date, elem.name, elem.remarks, elem.type);
+          });
 
           eventsDiv.appendChild(div);
         });
       }
     });
+}
+
+function showEventDetails(date, name, remarks, type) {
+  document.getElementById("selectedDay").innerHTML = date.slice(0, 2);
+  const eventsDiv = document.getElementById("eventsList");
+  eventsDiv.innerHTML = "";
+
+  const div1 = document.createElement("div");
+  div1.classList = `event ${type}`;
+  div1.innerHTML = name;
+  const div2 = document.createElement("div");
+  div2.classList = `event ${type}`;
+  div2.innerHTML = remarks;
+
+  eventsDiv.appendChild(div1);
+  eventsDiv.appendChild(div2);
 }
 
 showEvents();
