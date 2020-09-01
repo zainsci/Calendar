@@ -1,0 +1,87 @@
+{
+  "global": [
+    {
+      "date": "March 3",
+      "name": "World Wildlife Day",
+      "remarks": "Declared by United Nations to celebrate and raise awareness of the world's wild fauna and flora."
+    },
+    {
+      "date": "April 22",
+      "name": "Earth Day",
+      "remarks": "Celebrated around the world to demonstrate support for environmental protection. First celebrated in 1970."
+    },
+    {
+      "date": "June 5",
+      "name": "World Envirnoment Day",
+      "remarks": "celebrated for encouraging awareness and action for the protection of the environment."
+    },
+    {
+      "date": "April 22",
+      "name": "Earth Day",
+      "remarks": "Celebrated around the world to demonstrate support for environmental protection. First celebrated in 1970."
+    }
+  ],
+  "private": [],
+  "local": [
+    {
+      "date": "February 5",
+      "name": "Kashmir Solidarity Day",
+      "remarks": "Protest against Indian administration in Jammu and Kashmir."
+    },
+    {
+      "date": "April 21",
+      "name": "Iqbal's Death Anniversary",
+      "remarks": "Death Anniversary of Allama Muhammad Iqbal"
+    },
+    {
+      "date": "April 22",
+      "name": "National Book Day",
+      "remarks": "Pakistan's National Book Day"
+    },
+    {
+      "date": "March 23",
+      "name": "Pakistan Day",
+      "remarks": "Commemorates the Lahore Resolution, which formally demanded an independent Muslim-majority state to be created out of the British Indian Empire."
+    },
+    {
+      "date": "May 1",
+      "name": "Labor Day",
+      "remarks": "Celebrates the achievements of workers."
+    },
+    {
+      "date": "May 28",
+      "name": "Youm-e-Takbir",
+      "remarks": "Celebrated as a national day in Pakistan on May 28 in commemoration of Chagai-I and Chagai-II Nuclear Tests."
+    },
+    {
+      "date": "August 14",
+      "name": "Independence Day",
+      "remarks": "Marking Pakistani independence from the United Kingdom, formation of Pakistan in 1947."
+    },
+    {
+      "date": "September 6",
+      "name": "Defence Day",
+      "remarks": "Army Day/Defence Day or armed forces day of Pakistan (Youm-e-Fauj/Youm-e-Difa). On this day the 1965 Indo-Pak war began."
+    },
+    {
+      "date": "September 7",
+      "name": "Air Force Day",
+      "remarks": "Air Force Day (Youm-e-Fizaia) Depend on Federal Government on this day M.M. Alam shot 5 planes in a minute in the 1965 Indo-Pak War to set a world record."
+    },
+    {
+      "date": "September 8",
+      "name": "Navy Day",
+      "remarks": "Victory Day/Navy Day (Youm-e-Bahria) 1965 Indo-Pak War."
+    },
+    {
+      "date": "October 16",
+      "name": "Liaqat Ali Khan's Death Anniversary",
+      "remarks": "Death anniversary of Nawabzada Liaquat Ali Khan, widely known as Quaid-e-Millat (Leader of the Nation) and Shaheed-e-Millat and Pakistan's First Prime Minister "
+    },
+    {
+      "date": "December 25",
+      "name": "Quaid-e-Azam Day",
+      "remarks": "Birthday of Muhammad Ali Jinnah, founder of Pakistan."
+    }
+  ]
+}
