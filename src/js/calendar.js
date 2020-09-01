@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const calendar = getCalender(2020, 8);
+  const d = new Date();
+  const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
   printCalendar(calendar);
 });
 
