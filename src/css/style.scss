@@ -51,6 +51,7 @@ ol {
     position: absolute;
     top: 50px;
     left: 0;
+    z-index: 10000;
     li {
       padding: 8px 12px;
       text-align: left;
@@ -141,6 +142,49 @@ ol {
         ul {
           display: grid;
           grid-template-columns: repeat(7, 80px);
+          li {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            ul {
+              margin: 5px;
+              height: 50px;
+              width: 70px;
+              font-size: 8px;
+              white-space: nowrap;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items: baseline;
+              bottom: 0;
+              left: 0;
+              li {
+                width: 70px;
+                border-radius: 3px;
+                padding: 2px 5px;
+                margin-bottom: 2px;
+
+                &:nth-child(3) {
+                  display: none;
+                }
+                &:nth-child(4) {
+                  display: none;
+                }
+                &:nth-child(5) {
+                  display: none;
+                }
+              }
+              .local {
+                background-color: $green;
+              }
+              .global {
+                background-color: $blue;
+                color: white;
+              }
+            }
+          }
         }
       }
       .weekdays {

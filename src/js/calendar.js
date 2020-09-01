@@ -31,7 +31,7 @@ function printCalendar(calendar) {
     } else if (calendar[i] < 14 && i > 28) {
       li.classList = "next-month date box";
     } else {
-      li.classList = "date box";
+      li.classList = "this-month date box";
     }
 
     li.innerHTML = calendar[i];

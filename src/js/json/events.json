@@ -1,0 +1,1404 @@
+{
+  "4 January": [
+    {
+      "date": "4 January",
+      "name": "World Braille Day",
+      "remarks": "World Braille Day",
+      "type": "global"
+    }
+  ],
+  "24 January": [
+    {
+      "date": "24 January",
+      "name": "International Day of Education",
+      "remarks": "International Day of Education",
+      "type": "global"
+    }
+  ],
+  "27 January": [
+    {
+      "date": "27 January",
+      "name": "International Day of Commemoration in Memory of the Victims of the Holocaust",
+      "remarks": "International Day of Commemoration in Memory of the Victims of the Holocaust",
+      "type": "global"
+    }
+  ],
+  "6 February": [
+    {
+      "date": "6 February",
+      "name": "International Day of Zero Tolerance to Female Genital Mutilation",
+      "remarks": "International Day of Zero Tolerance to Female Genital Mutilation",
+      "type": "global"
+    }
+  ],
+  "10 February": [
+    {
+      "date": "10 February",
+      "name": "World Pulses Day",
+      "remarks": "World Pulses Day",
+      "type": "global"
+    }
+  ],
+  "11 February": [
+    {
+      "date": "11 February",
+      "name": "International Day of Women and Girls in Science",
+      "remarks": "International Day of Women and Girls in Science",
+      "type": "global"
+    }
+  ],
+  "13 February": [
+    {
+      "date": "13 February",
+      "name": "World Radio Day",
+      "remarks": "World Radio Day",
+      "type": "global"
+    }
+  ],
+  "20 February": [
+    {
+      "date": "20 February",
+      "name": "World Day of Social Justice",
+      "remarks": "World Day of Social Justice",
+      "type": "global"
+    }
+  ],
+  "21 February": [
+    {
+      "date": "21 February",
+      "name": "International Mother Language Day",
+      "remarks": "International Mother Language Day",
+      "type": "global"
+    }
+  ],
+  "1 March": [
+    {
+      "date": "1 March",
+      "name": "Zero Discrimination Day",
+      "remarks": "Zero Discrimination Day",
+      "type": "global"
+    }
+  ],
+  "3 March": [
+    {
+      "date": "3 March",
+      "name": "World Wildlife Day",
+      "remarks": "World Wildlife Day",
+      "type": "global"
+    }
+  ],
+  "8 March": [
+    {
+      "date": "8 March",
+      "name": "International Women's Day",
+      "remarks": "International Women's Day",
+      "type": "global"
+    }
+  ],
+  "20 March": [
+    {
+      "date": "20 March",
+      "name": "International Day of Happiness",
+      "remarks": "International Day of Happiness",
+      "type": "global"
+    },
+    {
+      "date": "20 March",
+      "name": "French Language Day",
+      "remarks": "French Language Day",
+      "type": "global"
+    }
+  ],
+  "21 March": [
+    {
+      "date": "21 March",
+      "name": "International Day for the Elimination of Racial Discrimination",
+      "remarks": "International Day for the Elimination of Racial Discrimination",
+      "type": "global"
+    },
+    {
+      "date": "21 March",
+      "name": "World Poetry Day",
+      "remarks": "World Poetry Day",
+      "type": "global"
+    },
+    {
+      "date": "21 March",
+      "name": "International Day of Nowruz",
+      "remarks": "International Day of Nowruz",
+      "type": "global"
+    },
+    {
+      "date": "21 March",
+      "name": "World Down Syndrome Day",
+      "remarks": "World Down Syndrome Day",
+      "type": "global"
+    },
+    {
+      "date": "21 March",
+      "name": "International Day of Forests",
+      "remarks": "International Day of Forests",
+      "type": "global"
+    }
+  ],
+  "22 March": [
+    {
+      "date": "22 March",
+      "name": "World Water Day",
+      "remarks": "World Water Day",
+      "type": "global"
+    }
+  ],
+  "23 March": [
+    {
+      "date": "23 March",
+      "name": "World Meteorological Day",
+      "remarks": "World Meteorological Day",
+      "type": "global"
+    },
+    {
+      "date": "23 March",
+      "name": "Pakistan Day",
+      "remarks": "Commemorates the Lahore Resolution, which formally demanded an independent Muslim-majority state to be created out of the British Indian Empire.",
+      "type": "local"
+    }
+  ],
+  "24 March": [
+    {
+      "date": "24 March",
+      "name": "World Tuberculosis Day",
+      "remarks": "World Tuberculosis Day",
+      "type": "global"
+    },
+    {
+      "date": "24 March",
+      "name": "International Day for the Right to the Truth concerning Gross Human Rights Violations and for the Dignity of Victims",
+      "remarks": "International Day for the Right to the Truth concerning Gross Human Rights Violations and for the Dignity of Victims",
+      "type": "global"
+    }
+  ],
+  "25 March": [
+    {
+      "date": "25 March",
+      "name": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
+      "remarks": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
+      "type": "global"
+    },
+    {
+      "date": "25 March",
+      "name": "International Day of Solidarity with Detained and Missing Staff Members",
+      "remarks": "International Day of Solidarity with Detained and Missing Staff Members",
+      "type": "global"
+    }
+  ],
+  "2 April": [
+    {
+      "date": "2 April",
+      "name": "World Autism Awareness Day",
+      "remarks": "World Autism Awareness Day",
+      "type": "global"
+    }
+  ],
+  "4 April": [
+    {
+      "date": "4 April",
+      "name": "International Day for Mine Awareness and Assistance in Mine Action",
+      "remarks": "International Day for Mine Awareness and Assistance in Mine Action",
+      "type": "global"
+    }
+  ],
+  "5 April": [
+    {
+      "date": "5 April",
+      "name": "International Day of Conscience",
+      "remarks": "International Day of Conscience",
+      "type": "global"
+    }
+  ],
+  "6 April": [
+    {
+      "date": "6 April",
+      "name": "International Day of Sport for Development and Peace",
+      "remarks": "International Day of Sport for Development and Peace",
+      "type": "global"
+    }
+  ],
+  "7 April": [
+    {
+      "date": "7 April",
+      "name": "International Day of Reflection on the 1994 Genocide against the Tutsi in Rwanda",
+      "remarks": "International Day of Reflection on the 1994 Genocide against the Tutsi in Rwanda",
+      "type": "global"
+    },
+    {
+      "date": "7 April",
+      "name": "World Health Day",
+      "remarks": "World Health Day",
+      "type": "global"
+    }
+  ],
+  "12 April": [
+    {
+      "date": "12 April",
+      "name": "International Day of Human Space Flight",
+      "remarks": "International Day of Human Space Flight",
+      "type": "global"
+    }
+  ],
+  "14 April": [
+    {
+      "date": "14 April",
+      "name": "World Chagas Disease Day",
+      "remarks": "World Chagas Disease Day",
+      "type": "global"
+    }
+  ],
+  "20 April": [
+    {
+      "date": "20 April",
+      "name": "Chinese Language Day",
+      "remarks": "Chinese Language Day",
+      "type": "global"
+    }
+  ],
+  "21 April": [
+    {
+      "date": "21 April",
+      "name": "World Creativity and Innovation Day",
+      "remarks": "World Creativity and Innovation Day",
+      "type": "global"
+    },
+    {
+      "date": "21 April",
+      "name": "Iqbal's Death Anniversary",
+      "remarks": "Death Anniversary of Allama Muhammad Iqbal",
+      "type": "local"
+    }
+  ],
+  "22 April": [
+    {
+      "date": "22 April",
+      "name": "International Mother Earth Day",
+      "remarks": "International Mother Earth Day",
+      "type": "global"
+    },
+    {
+      "date": "22 April",
+      "name": "National Book Day",
+      "remarks": "Pakistan's National Book Day",
+      "type": "local"
+    }
+  ],
+  "23 April": [
+    {
+      "date": "23 April",
+      "name": "World Book and Copyright Day",
+      "remarks": "World Book and Copyright Day",
+      "type": "global"
+    },
+    {
+      "date": "23 April",
+      "name": "English Language Day",
+      "remarks": "English Language Day",
+      "type": "global"
+    },
+    {
+      "date": "23 April",
+      "name": "Spanish Language Day",
+      "remarks": "Spanish Language Day",
+      "type": "global"
+    },
+    {
+      "date": "23 April",
+      "name": "International Girls in ICT Day",
+      "remarks": "International Girls in ICT Day",
+      "type": "global"
+    }
+  ],
+  "24 April": [
+    {
+      "date": "24 April",
+      "name": "International Day of Multilateralism and Diplomacy for Peace",
+      "remarks": "International Day of Multilateralism and Diplomacy for Peace",
+      "type": "global"
+    }
+  ],
+  "25 April": [
+    {
+      "date": "25 April",
+      "name": "International Delegate’s Day",
+      "remarks": "International Delegate’s Day",
+      "type": "global"
+    },
+    {
+      "date": "25 April",
+      "name": "World Malaria Day",
+      "remarks": "World Malaria Day",
+      "type": "global"
+    }
+  ],
+  "26 April": [
+    {
+      "date": "26 April",
+      "name": "International Chernobyl Disaster Remembrance Day",
+      "remarks": "International Chernobyl Disaster Remembrance Day",
+      "type": "global"
+    },
+    {
+      "date": "26 April",
+      "name": "World Intellectual Property Day",
+      "remarks": "World Intellectual Property Day",
+      "type": "global"
+    }
+  ],
+  "28 April": [
+    {
+      "date": "28 April",
+      "name": "World Day for Safety and Health at Work",
+      "remarks": "World Day for Safety and Health at Work",
+      "type": "global"
+    }
+  ],
+  "30 April": [
+    {
+      "date": "30 April",
+      "name": "International Jazz Day",
+      "remarks": "International Jazz Day",
+      "type": "global"
+    }
+  ],
+  "2 May": [
+    {
+      "date": "2 May",
+      "name": "World Tuna Day",
+      "remarks": "World Tuna Day",
+      "type": "global"
+    }
+  ],
+  "3 May": [
+    {
+      "date": "3 May",
+      "name": "World Press Freedom Day",
+      "remarks": "World Press Freedom Day",
+      "type": "global"
+    }
+  ],
+  "7 May": [
+    {
+      "date": "7 May",
+      "name": "Vesak, the Day of the Full Moon",
+      "remarks": "Vesak, the Day of the Full Moon",
+      "type": "global"
+    }
+  ],
+  "8-9 May": [
+    {
+      "date": "8-9 May",
+      "name": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War",
+      "remarks": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War",
+      "type": "global"
+    }
+  ],
+  "9 May": [
+    {
+      "date": "9 May",
+      "name": "World Migratory Bird Day",
+      "remarks": "World Migratory Bird Day",
+      "type": "global"
+    }
+  ],
+  "15 May": [
+    {
+      "date": "15 May",
+      "name": "International Day of Families",
+      "remarks": "International Day of Families",
+      "type": "global"
+    }
+  ],
+  "16 May": [
+    {
+      "date": "16 May",
+      "name": "International Day of Living Together in Peace",
+      "remarks": "International Day of Living Together in Peace",
+      "type": "global"
+    },
+    {
+      "date": "16 May",
+      "name": "International Day of Light",
+      "remarks": "International Day of Light",
+      "type": "global"
+    }
+  ],
+  "17 May": [
+    {
+      "date": "17 May",
+      "name": "World Telecommunication and Information Society Day",
+      "remarks": "World Telecommunication and Information Society Day",
+      "type": "global"
+    }
+  ],
+  "20 May": [
+    {
+      "date": "20 May",
+      "name": "World Bee Day",
+      "remarks": "World Bee Day",
+      "type": "global"
+    }
+  ],
+  "21 May": [
+    {
+      "date": "21 May",
+      "name": "International Tea Day",
+      "remarks": "International Tea Day",
+      "type": "global"
+    },
+    {
+      "date": "21 May",
+      "name": "World Day for Cultural Diversity for Dialogue and Development",
+      "remarks": "World Day for Cultural Diversity for Dialogue and Development",
+      "type": "global"
+    }
+  ],
+  "22 May": [
+    {
+      "date": "22 May",
+      "name": "International Day for Biological Diversity",
+      "remarks": "International Day for Biological Diversity",
+      "type": "global"
+    }
+  ],
+  "23 May": [
+    {
+      "date": "23 May",
+      "name": "International Day to End Obstetric Fistula",
+      "remarks": "International Day to End Obstetric Fistula",
+      "type": "global"
+    }
+  ],
+  "29 May": [
+    {
+      "date": "29 May",
+      "name": "International Day of UN Peacekeepers",
+      "remarks": "International Day of UN Peacekeepers",
+      "type": "global"
+    }
+  ],
+  "31 May": [
+    {
+      "date": "31 May",
+      "name": "World No-Tobacco Day",
+      "remarks": "World No-Tobacco Day",
+      "type": "global"
+    }
+  ],
+  "1 June": [
+    {
+      "date": "1 June",
+      "name": "Global Day of Parents",
+      "remarks": "Global Day of Parents",
+      "type": "global"
+    }
+  ],
+  "3 June": [
+    {
+      "date": "3 June",
+      "name": "World Bicycle Day",
+      "remarks": "World Bicycle Day",
+      "type": "global"
+    }
+  ],
+  "4 June": [
+    {
+      "date": "4 June",
+      "name": "International Day of Innocent Children Victims of Aggression",
+      "remarks": "International Day of Innocent Children Victims of Aggression",
+      "type": "global"
+    }
+  ],
+  "5 June": [
+    {
+      "date": "5 June",
+      "name": "World Environment Day",
+      "remarks": "World Environment Day",
+      "type": "global"
+    },
+    {
+      "date": "5 June",
+      "name": "International Day for the Fight against Illegal, Unreported and Unregulated Fishing",
+      "remarks": "International Day for the Fight against Illegal, Unreported and Unregulated Fishing",
+      "type": "global"
+    }
+  ],
+  "6 June": [
+    {
+      "date": "6 June",
+      "name": "Russian Language Day",
+      "remarks": "Russian Language Day",
+      "type": "global"
+    }
+  ],
+  "7 June": [
+    {
+      "date": "7 June",
+      "name": "World Food Safety Day",
+      "remarks": "World Food Safety Day",
+      "type": "global"
+    }
+  ],
+  "8 June": [
+    {
+      "date": "8 June",
+      "name": "World Oceans Day",
+      "remarks": "World Oceans Day",
+      "type": "global"
+    }
+  ],
+  "12 June": [
+    {
+      "date": "12 June",
+      "name": "World Day Against Child Labour",
+      "remarks": "World Day Against Child Labour",
+      "type": "global"
+    }
+  ],
+  "13 June": [
+    {
+      "date": "13 June",
+      "name": "International Albinism Awareness Day",
+      "remarks": "International Albinism Awareness Day",
+      "type": "global"
+    }
+  ],
+  "14 June": [
+    {
+      "date": "14 June",
+      "name": "World Blood Donor Day",
+      "remarks": "World Blood Donor Day",
+      "type": "global"
+    }
+  ],
+  "15 June": [
+    {
+      "date": "15 June",
+      "name": "World Elder Abuse Awareness Day",
+      "remarks": "World Elder Abuse Awareness Day",
+      "type": "global"
+    }
+  ],
+  "16 June": [
+    {
+      "date": "16 June",
+      "name": "International Day of Family Remittances",
+      "remarks": "International Day of Family Remittances",
+      "type": "global"
+    }
+  ],
+  "17 June": [
+    {
+      "date": "17 June",
+      "name": "World Day to Combat Desertification and Drought",
+      "remarks": "World Day to Combat Desertification and Drought",
+      "type": "global"
+    }
+  ],
+  "18 June": [
+    {
+      "date": "18 June",
+      "name": "Sustainable Gastronomy Day",
+      "remarks": "Sustainable Gastronomy Day",
+      "type": "global"
+    }
+  ],
+  "19 June": [
+    {
+      "date": "19 June",
+      "name": "International Day for the Elimination of Sexual Violence in Conflict",
+      "remarks": "International Day for the Elimination of Sexual Violence in Conflict",
+      "type": "global"
+    }
+  ],
+  "20 June": [
+    {
+      "date": "20 June",
+      "name": "World Refugee Day",
+      "remarks": "World Refugee Day",
+      "type": "global"
+    }
+  ],
+  "21 June": [
+    {
+      "date": "21 June",
+      "name": "International Day of Yoga",
+      "remarks": "International Day of Yoga",
+      "type": "global"
+    },
+    {
+      "date": "21 June",
+      "name": "International Day of the Celebration of the Solstice",
+      "remarks": "International Day of the Celebration of the Solstice",
+      "type": "global"
+    }
+  ],
+  "23 June": [
+    {
+      "date": "23 June",
+      "name": "United Nations Public Service Day",
+      "remarks": "United Nations Public Service Day",
+      "type": "global"
+    },
+    {
+      "date": "23 June",
+      "name": "International Widows' Day",
+      "remarks": "International Widows' Day",
+      "type": "global"
+    }
+  ],
+  "25 June": [
+    {
+      "date": "25 June",
+      "name": "Day of the Seafarer",
+      "remarks": "Day of the Seafarer",
+      "type": "global"
+    }
+  ],
+  "26 June": [
+    {
+      "date": "26 June",
+      "name": "International Day against Drug Abuse and Illicit Trafficking",
+      "remarks": "International Day against Drug Abuse and Illicit Trafficking",
+      "type": "global"
+    },
+    {
+      "date": "26 June",
+      "name": "United Nations International Day in Support of Victims of Torture",
+      "remarks": "United Nations International Day in Support of Victims of Torture",
+      "type": "global"
+    }
+  ],
+  "27 June": [
+    {
+      "date": "27 June",
+      "name": "Micro-, Small and Medium-sized Enterprises Day",
+      "remarks": "Micro-, Small and Medium-sized Enterprises Day",
+      "type": "global"
+    }
+  ],
+  "29 June": [
+    {
+      "date": "29 June",
+      "name": "International Day of the Tropics",
+      "remarks": "International Day of the Tropics",
+      "type": "global"
+    }
+  ],
+  "30 June": [
+    {
+      "date": "30 June",
+      "name": "International Asteroid Day",
+      "remarks": "International Asteroid Day",
+      "type": "global"
+    },
+    {
+      "date": "30 June",
+      "name": "International Day of Parliamentarism",
+      "remarks": "International Day of Parliamentarism",
+      "type": "global"
+    }
+  ],
+  "4 July": [
+    {
+      "date": "4 July",
+      "name": "International Day of Cooperatives",
+      "remarks": "International Day of Cooperatives",
+      "type": "global"
+    }
+  ],
+  "11 July": [
+    {
+      "date": "11 July",
+      "name": "World Population Day",
+      "remarks": "World Population Day",
+      "type": "global"
+    }
+  ],
+  "15 July": [
+    {
+      "date": "15 July",
+      "name": "World Youth Skills Day",
+      "remarks": "World Youth Skills Day",
+      "type": "global"
+    }
+  ],
+  "18 July": [
+    {
+      "date": "18 July",
+      "name": "Nelson Mandela International Day",
+      "remarks": "Nelson Mandela International Day",
+      "type": "global"
+    }
+  ],
+  "20 July": [
+    {
+      "date": "20 July",
+      "name": "World Chess Day",
+      "remarks": "World Chess Day",
+      "type": "global"
+    }
+  ],
+  "28 July": [
+    {
+      "date": "28 July",
+      "name": "World Hepatitis Day",
+      "remarks": "World Hepatitis Day",
+      "type": "global"
+    }
+  ],
+  "30 July": [
+    {
+      "date": "30 July",
+      "name": "International Day of Friendship",
+      "remarks": "International Day of Friendship",
+      "type": "global"
+    },
+    {
+      "date": "30 July",
+      "name": "World Day against Trafficking in Persons",
+      "remarks": "World Day against Trafficking in Persons",
+      "type": "global"
+    }
+  ],
+  "9 August": [
+    {
+      "date": "9 August",
+      "name": "International Day of the World's Indigenous Peoples",
+      "remarks": "International Day of the World's Indigenous Peoples",
+      "type": "global"
+    }
+  ],
+  "12 August": [
+    {
+      "date": "12 August",
+      "name": "International Youth Day",
+      "remarks": "International Youth Day",
+      "type": "global"
+    }
+  ],
+  "19 August": [
+    {
+      "date": "19 August",
+      "name": "World Humanitarian Day",
+      "remarks": "World Humanitarian Day",
+      "type": "global"
+    }
+  ],
+  "21 August": [
+    {
+      "date": "21 August",
+      "name": "International Day of Remembrance and Tribute to the Victims of Terrorism",
+      "remarks": "International Day of Remembrance and Tribute to the Victims of Terrorism",
+      "type": "global"
+    }
+  ],
+  "22 August": [
+    {
+      "date": "22 August",
+      "name": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief",
+      "remarks": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief",
+      "type": "global"
+    }
+  ],
+  "23 August": [
+    {
+      "date": "23 August",
+      "name": "International Day for the Remembrance of the Slave Trade and Its Abolition",
+      "remarks": "International Day for the Remembrance of the Slave Trade and Its Abolition",
+      "type": "global"
+    }
+  ],
+  "29 August": [
+    {
+      "date": "29 August",
+      "name": "International Day against Nuclear Tests",
+      "remarks": "International Day against Nuclear Tests",
+      "type": "global"
+    }
+  ],
+  "30 August": [
+    {
+      "date": "30 August",
+      "name": "International Day of the Victims of Enforced Disappearances",
+      "remarks": "International Day of the Victims of Enforced Disappearances",
+      "type": "global"
+    }
+  ],
+  "5 September": [
+    {
+      "date": "5 September",
+      "name": "International Day of Charity",
+      "remarks": "International Day of Charity",
+      "type": "global"
+    }
+  ],
+  "7 September": [
+    {
+      "date": "7 September",
+      "name": "International Day of Clean Air for Blue Skies",
+      "remarks": "International Day of Clean Air for Blue Skies",
+      "type": "global"
+    },
+    {
+      "date": "7 September",
+      "name": "Air Force Day",
+      "remarks": "Air Force Day (Youm-e-Fizaia) Depend on Federal Government on this day M.M. Alam shot 5 planes in a minute in the 1965 Indo-Pak War to set a world record.",
+      "type": "local"
+    }
+  ],
+  "8 September": [
+    {
+      "date": "8 September",
+      "name": "International Literacy Day",
+      "remarks": "International Literacy Day",
+      "type": "global"
+    },
+    {
+      "date": "8 September",
+      "name": "Navy Day",
+      "remarks": "Victory Day/Navy Day (Youm-e-Bahria) 1965 Indo-Pak War.",
+      "type": "local"
+    }
+  ],
+  "9 September": [
+    {
+      "date": "9 September",
+      "name": "International Day to Protect Education from Attack",
+      "remarks": "International Day to Protect Education from Attack",
+      "type": "global"
+    }
+  ],
+  "12 September": [
+    {
+      "date": "12 September",
+      "name": "United Nations Day for South-South Cooperation",
+      "remarks": "United Nations Day for South-South Cooperation",
+      "type": "global"
+    }
+  ],
+  "15 September": [
+    {
+      "date": "15 September",
+      "name": "International Day of Democracy",
+      "remarks": "International Day of Democracy",
+      "type": "global"
+    }
+  ],
+  "16 September": [
+    {
+      "date": "16 September",
+      "name": "International Day for the Preservation of the Ozone Layer",
+      "remarks": "International Day for the Preservation of the Ozone Layer",
+      "type": "global"
+    }
+  ],
+  "17 September": [
+    {
+      "date": "17 September",
+      "name": "World Patient Safety Day",
+      "remarks": "World Patient Safety Day",
+      "type": "global"
+    }
+  ],
+  "18 September": [
+    {
+      "date": "18 September",
+      "name": "International Equal Pay Day",
+      "remarks": "International Equal Pay Day",
+      "type": "global"
+    }
+  ],
+  "21 September": [
+    {
+      "date": "21 September",
+      "name": "International Day of Peace",
+      "remarks": "International Day of Peace",
+      "type": "global"
+    }
+  ],
+  "23 September": [
+    {
+      "date": "23 September",
+      "name": "International Day of Sign Languages",
+      "remarks": "International Day of Sign Languages",
+      "type": "global"
+    }
+  ],
+  "24 September": [
+    {
+      "date": "24 September",
+      "name": "World Maritime Day",
+      "remarks": "World Maritime Day",
+      "type": "global"
+    }
+  ],
+  "26 September": [
+    {
+      "date": "26 September",
+      "name": "International Day for the Total Elimination of Nuclear Weapons",
+      "remarks": "International Day for the Total Elimination of Nuclear Weapons",
+      "type": "global"
+    }
+  ],
+  "27 September": [
+    {
+      "date": "27 September",
+      "name": "World Tourism Day",
+      "remarks": "World Tourism Day",
+      "type": "global"
+    }
+  ],
+  "28 September": [
+    {
+      "date": "28 September",
+      "name": "International Day for Universal Access to Information",
+      "remarks": "International Day for Universal Access to Information",
+      "type": "global"
+    }
+  ],
+  "29 September": [
+    {
+      "date": "29 September",
+      "name": "International Day of Awareness of Food Loss and Waste",
+      "remarks": "International Day of Awareness of Food Loss and Waste",
+      "type": "global"
+    }
+  ],
+  "30 September": [
+    {
+      "date": "30 September",
+      "name": "International Translation Day",
+      "remarks": "International Translation Day",
+      "type": "global"
+    }
+  ],
+  "1 October": [
+    {
+      "date": "1 October",
+      "name": "International Day of Older Persons",
+      "remarks": "International Day of Older Persons",
+      "type": "global"
+    }
+  ],
+  "2 October": [
+    {
+      "date": "2 October",
+      "name": "International Day of Non-Violence",
+      "remarks": "International Day of Non-Violence",
+      "type": "global"
+    }
+  ],
+  "5 October": [
+    {
+      "date": "5 October",
+      "name": "World Teachers’ Day",
+      "remarks": "World Teachers’ Day",
+      "type": "global"
+    },
+    {
+      "date": "5 October",
+      "name": "World Habitat Day",
+      "remarks": "World Habitat Day",
+      "type": "global"
+    }
+  ],
+  "9 October": [
+    {
+      "date": "9 October",
+      "name": "World Post Day",
+      "remarks": "World Post Day",
+      "type": "global"
+    }
+  ],
+  "10 October": [
+    {
+      "date": "10 October",
+      "name": "World Mental Health Day",
+      "remarks": "World Mental Health Day",
+      "type": "global"
+    },
+    {
+      "date": "10 October",
+      "name": "World Migratory Bird Day",
+      "remarks": "World Migratory Bird Day",
+      "type": "global"
+    }
+  ],
+  "11 October": [
+    {
+      "date": "11 October",
+      "name": "International Day of the Girl Child",
+      "remarks": "International Day of the Girl Child",
+      "type": "global"
+    }
+  ],
+  "13 October": [
+    {
+      "date": "13 October",
+      "name": "International Day for Disaster Risk Reduction",
+      "remarks": "International Day for Disaster Risk Reduction",
+      "type": "global"
+    }
+  ],
+  "15 October": [
+    {
+      "date": "15 October",
+      "name": "International Day of Rural Women",
+      "remarks": "International Day of Rural Women",
+      "type": "global"
+    }
+  ],
+  "16 October": [
+    {
+      "date": "16 October",
+      "name": "World Food Day",
+      "remarks": "World Food Day",
+      "type": "global"
+    },
+    {
+      "date": "16 October",
+      "name": "Liaqat Ali Khan's Death Anniversary",
+      "remarks": "Death anniversary of Nawabzada Liaquat Ali Khan, widely known as Quaid-e-Millat (Leader of the Nation) and Shaheed-e-Millat and Pakistan's First Prime Minister ",
+      "type": "local"
+    }
+  ],
+  "17 October": [
+    {
+      "date": "17 October",
+      "name": "International Day for the Eradication of Poverty",
+      "remarks": "International Day for the Eradication of Poverty",
+      "type": "global"
+    }
+  ],
+  "20 October": [
+    {
+      "date": "20 October",
+      "name": "World Statistics Day",
+      "remarks": "World Statistics Day",
+      "type": "global"
+    }
+  ],
+  "24 October": [
+    {
+      "date": "24 October",
+      "name": "United Nations Day",
+      "remarks": "United Nations Day",
+      "type": "global"
+    },
+    {
+      "date": "24 October",
+      "name": "World Development Information Day",
+      "remarks": "World Development Information Day",
+      "type": "global"
+    }
+  ],
+  "27 October": [
+    {
+      "date": "27 October",
+      "name": "World Day for Audiovisual Heritage",
+      "remarks": "World Day for Audiovisual Heritage",
+      "type": "global"
+    }
+  ],
+  "31 October": [
+    {
+      "date": "31 October",
+      "name": "World Cities Day",
+      "remarks": "World Cities Day",
+      "type": "global"
+    }
+  ],
+  "2 November": [
+    {
+      "date": "2 November",
+      "name": "International Day to End Impunity for Crimes against Journalists",
+      "remarks": "International Day to End Impunity for Crimes against Journalists",
+      "type": "global"
+    }
+  ],
+  "5 November": [
+    {
+      "date": "5 November",
+      "name": "World Tsunami Awareness Day",
+      "remarks": "World Tsunami Awareness Day",
+      "type": "global"
+    }
+  ],
+  "6 November": [
+    {
+      "date": "6 November",
+      "name": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
+      "remarks": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
+      "type": "global"
+    }
+  ],
+  "10 November": [
+    {
+      "date": "10 November",
+      "name": "World Science Day for Peace and Development ",
+      "remarks": "World Science Day for Peace and Development ",
+      "type": "global"
+    }
+  ],
+  "14 November": [
+    {
+      "date": "14 November",
+      "name": "World Diabetes Day  ",
+      "remarks": "World Diabetes Day  ",
+      "type": "global"
+    }
+  ],
+  "15 November ": [
+    {
+      "date": "15 November ",
+      "name": "World Day of Remembrance for Road Traffic Victims  ",
+      "remarks": "World Day of Remembrance for Road Traffic Victims  ",
+      "type": "global"
+    }
+  ],
+  "16 November": [
+    {
+      "date": "16 November",
+      "name": "International Day for Tolerance  ",
+      "remarks": "International Day for Tolerance  ",
+      "type": "global"
+    }
+  ],
+  "19 November": [
+    {
+      "date": "19 November",
+      "name": "World Toilet Day    ",
+      "remarks": "World Toilet Day    ",
+      "type": "global"
+    }
+  ],
+  "19 November ": [
+    {
+      "date": "19 November ",
+      "name": "World Philosophy Day ",
+      "remarks": "World Philosophy Day ",
+      "type": "global"
+    }
+  ],
+  "20 November": [
+    {
+      "date": "20 November",
+      "name": "Africa Industrialization Day  ",
+      "remarks": "Africa Industrialization Day  ",
+      "type": "global"
+    },
+    {
+      "date": "20 November",
+      "name": "World Children's Day ",
+      "remarks": "World Children's Day ",
+      "type": "global"
+    }
+  ],
+  "21 November": [
+    {
+      "date": "21 November",
+      "name": "World Television Day  ",
+      "remarks": "World Television Day  ",
+      "type": "global"
+    }
+  ],
+  "25 November": [
+    {
+      "date": "25 November",
+      "name": "International Day for the Elimination of Violence against Women  ",
+      "remarks": "International Day for the Elimination of Violence against Women  ",
+      "type": "global"
+    }
+  ],
+  "29 November": [
+    {
+      "date": "29 November",
+      "name": "International Day of Solidarity with the Palestinian People  ",
+      "remarks": "International Day of Solidarity with the Palestinian People  ",
+      "type": "global"
+    }
+  ],
+  "30 November": [
+    {
+      "date": "30 November",
+      "name": "Day of Remembrance for all Victims of Chemical Warfare ",
+      "remarks": "Day of Remembrance for all Victims of Chemical Warfare ",
+      "type": "global"
+    }
+  ],
+  "1 December": [
+    {
+      "date": "1 December",
+      "name": "World AIDS Day",
+      "remarks": "World AIDS Day",
+      "type": "global"
+    }
+  ],
+  "2 December": [
+    {
+      "date": "2 December",
+      "name": "International Day for the Abolition of Slavery  ",
+      "remarks": "International Day for the Abolition of Slavery  ",
+      "type": "global"
+    }
+  ],
+  "3 December": [
+    {
+      "date": "3 December",
+      "name": "International Day of Persons with Disabilities ",
+      "remarks": "International Day of Persons with Disabilities ",
+      "type": "global"
+    }
+  ],
+  "4 December": [
+    {
+      "date": "4 December",
+      "name": "International Day of Banks ",
+      "remarks": "International Day of Banks ",
+      "type": "global"
+    }
+  ],
+  "5 December": [
+    {
+      "date": "5 December",
+      "name": "International Volunteer Day for Economic and Social Development   ",
+      "remarks": "International Volunteer Day for Economic and Social Development   ",
+      "type": "global"
+    },
+    {
+      "date": "5 December",
+      "name": "World Soil Day ",
+      "remarks": "World Soil Day ",
+      "type": "global"
+    }
+  ],
+  "7 December": [
+    {
+      "date": "7 December",
+      "name": "International Civil Aviation Day ",
+      "remarks": "International Civil Aviation Day ",
+      "type": "global"
+    }
+  ],
+  "9 December": [
+    {
+      "date": "9 December",
+      "name": "International Day of Commemoration and Dignity of the Victims of the Crime of Genocide and of the Prevention of this Crime  ",
+      "remarks": "International Day of Commemoration and Dignity of the Victims of the Crime of Genocide and of the Prevention of this Crime  ",
+      "type": "global"
+    },
+    {
+      "date": "9 December",
+      "name": "International Anti-Corruption Day  ",
+      "remarks": "International Anti-Corruption Day  ",
+      "type": "global"
+    }
+  ],
+  "10 December": [
+    {
+      "date": "10 December",
+      "name": "Human Rights Day  ",
+      "remarks": "Human Rights Day  ",
+      "type": "global"
+    }
+  ],
+  "11 December": [
+    {
+      "date": "11 December",
+      "name": "International Mountain Day  ",
+      "remarks": "International Mountain Day  ",
+      "type": "global"
+    }
+  ],
+  "12 December": [
+    {
+      "date": "12 December",
+      "name": "International Day of Neutrality ",
+      "remarks": "International Day of Neutrality ",
+      "type": "global"
+    },
+    {
+      "date": "12 December",
+      "name": "International Universal Health Coverage Day ",
+      "remarks": "International Universal Health Coverage Day ",
+      "type": "global"
+    }
+  ],
+  "18 December": [
+    {
+      "date": "18 December",
+      "name": "International Migrants Day  ",
+      "remarks": "International Migrants Day  ",
+      "type": "global"
+    },
+    {
+      "date": "18 December",
+      "name": "Arabic Language Day ",
+      "remarks": "Arabic Language Day ",
+      "type": "global"
+    }
+  ],
+  "20 December": [
+    {
+      "date": "20 December",
+      "name": "International Human Solidarity Day  ",
+      "remarks": "International Human Solidarity Day  ",
+      "type": "global"
+    }
+  ],
+  "5 February": [
+    {
+      "date": "5 February",
+      "name": "Kashmir Solidarity Day",
+      "remarks": "Protest against Indian administration in Jammu and Kashmir.",
+      "type": "local"
+    }
+  ],
+  "1 May": [
+    {
+      "date": "1 May",
+      "name": "Labor Day",
+      "remarks": "Celebrates the achievements of workers.",
+      "type": "local"
+    }
+  ],
+  "28 May": [
+    {
+      "date": "28 May",
+      "name": "Youm-e-Takbir",
+      "remarks": "Celebrated as a national day in Pakistan on May 28 in commemoration of Chagai-I and Chagai-II Nuclear Tests.",
+      "type": "local"
+    }
+  ],
+  "14 August": [
+    {
+      "date": "14 August",
+      "name": "Independence Day",
+      "remarks": "Marking Pakistani independence from the United Kingdom, formation of Pakistan in 1947.",
+      "type": "local"
+    }
+  ],
+  "6 September": [
+    {
+      "date": "6 September",
+      "name": "Defence Day",
+      "remarks": "Army Day/Defence Day or armed forces day of Pakistan (Youm-e-Fauj/Youm-e-Difa). On this day the 1965 Indo-Pak war began.",
+      "type": "local"
+    }
+  ],
+  "25 December": [
+    {
+      "date": "25 December",
+      "name": "Quaid-e-Azam Day",
+      "remarks": "Birthday of Muhammad Ali Jinnah, founder of Pakistan.",
+      "type": "local"
+    }
+  ]
+}

@@ -35,6 +35,7 @@ headerValues.forEach((elem) => {
 
         const calendar = getCalender(year, month);
         printCalendar(calendar);
+        showEvents();
       });
     });
   });
