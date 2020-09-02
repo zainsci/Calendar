@@ -38,7 +38,7 @@ function showEventsInSection(month, day) {
           div.classList = `event ${elem.type}`;
           div.innerHTML = elem.name;
           div.addEventListener("click", () => {
-            showEventDetails(elem.date, elem.name, elem.remarks, elem.type);
+            showEventDetails(elem);
           });
 
           eventsDiv.appendChild(div);
@@ -48,18 +48,18 @@ function showEventsInSection(month, day) {
 }
 
 // Renders event details if clicked on
-function showEventDetails(date, name, remarks, type) {
-  document.getElementById("selectedDay").innerHTML = date.slice(0, 2);
-  const eventsDiv = document.getElementById("eventsList");
-  eventsDiv.innerHTML = "";
+function showEventDetails(event) {
+  document.getElementById("popupEventWin").style.display = "flex";
+  const eventsDiv = document.getElementById("popupEvent");
+  // eventsDiv.innerHTML = "";
 
-  const div1 = document.createElement("div");
-  div1.classList = `event ${type}`;
-  div1.innerHTML = name;
-  const div2 = document.createElement("div");
-  div2.classList = `event ${type}`;
-  div2.innerHTML = remarks;
+  // const div1 = document.createElement("div");
+  // div1.classList = `event ${type}`;
+  // div1.innerHTML = name;
+  // const div2 = document.createElement("div");
+  // div2.classList = `event ${type}`;
+  // div2.innerHTML = remarks;
 
-  eventsDiv.appendChild(div1);
-  eventsDiv.appendChild(div2);
+  // eventsDiv.appendChild(div1);
+  // eventsDiv.appendChild(div2);
 }

@@ -36,6 +36,11 @@ headerValues.forEach((elem) => {
   });
 });
 
+// Closing Event details window
+document.getElementById("crossEvent").onclick = () => {
+  document.getElementById("popupEventWin").style.display = "none";
+};
+
 function toggleDisplay(elem) {
   const curDisplayStyle = elem.style.display;
 

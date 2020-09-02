@@ -28,42 +28,14 @@ ol {
   justify-content: center;
 }
 
+.border {
+  border: 1px solid #eee;
+}
 .header-dropdown {
   border: 1px solid #ddd;
   height: 40px;
   margin-right: 10px;
   position: relative;
-}
-
-.header-year-list,
-.header-month-list,
-.header-events-list {
-  padding: 0 10px;
-  width: 100%;
-  display: none;
-  ul {
-    width: 100%;
-    background-color: white;
-    border: 1px solid #efefef;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left !important;
-    box-shadow: 0px 5px 10px 0px rgba(238, 238, 238, 1);
-    position: absolute;
-    top: 50px;
-    left: 0;
-    z-index: 10000;
-    li {
-      padding: 8px 12px;
-      text-align: left;
-      cursor: pointer;
-      overflow: hidden;
-      &:hover {
-        background-color: #efefef;
-      }
-    }
-  }
 }
 
 .next-month {
@@ -103,17 +75,44 @@ ol {
     width: 650px;
     height: 100%;
     padding: 10px;
-    border: 1px solid black;
+    margin-right: 2px;
     header {
       width: 100%;
       height: 40px;
       margin-top: 10px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      // display: flex;
-      // justify-content: left;
-      // align-items: center;
       margin-bottom: 10px;
+      .header-year-list,
+      .header-month-list,
+      .header-events-list {
+        padding: 0 10px;
+        width: 100%;
+        display: none;
+        ul {
+          width: 100%;
+          background-color: white;
+          border: 1px solid #efefef;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: left !important;
+          box-shadow: 0px 5px 10px 0px rgba(238, 238, 238, 1);
+          position: absolute;
+          top: 50px;
+          left: 0;
+          z-index: 1000;
+          li {
+            padding: 8px 12px;
+            text-align: left;
+            cursor: pointer;
+            overflow: hidden;
+            &:hover {
+              background-color: #efefef;
+            }
+          }
+        }
+      }
       .header-box {
         width: 100%;
         height: 100%;
@@ -124,18 +123,6 @@ ol {
         white-space: nowrap;
         &:hover {
           background-color: #efefef;
-        }
-      }
-      .header-year {
-        #HeaderYear {
-        }
-      }
-      .header-month {
-        #HeaderMonth {
-        }
-      }
-      .header-events {
-        #HeaderEvent {
         }
       }
     }
@@ -200,8 +187,8 @@ ol {
   section {
     width: 250px;
     height: 100%;
+    border-left: 1px solid #eee;
     padding: 10px;
-    border: 1px solid black;
     .select {
       background-color: $green;
       height: 40px;
@@ -233,6 +220,73 @@ ol {
         border-radius: 5px;
         margin-bottom: 10px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+.popup {
+  width: 880px;
+  height: 615px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+
+  .popup-event {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    z-index: 1002;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    .event-name {
+      width: fit-content;
+      border-radius: 5px;
+      margin: 10px 0;
+      padding: 8px 12px;
+    }
+    .event-description {
+      width: 100%;
+      border-radius: 5px;
+      padding: 8px 12px;
+    }
+    .cross {
+      width: 24px;
+      height: 24px;
+      font-size: 22px;
+      color: black;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1003;
+      border-radius: 50%;
+      background-color: #eef0f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        background-color: #d9dbdd;
+      }
+    }
+    .search-google {
+      width: fit-content;
+      padding: 8px 12px;
+      background-color: #4285f4;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      a {
+        text-decoration: none;
+        color: white;
       }
     }
   }
