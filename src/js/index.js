@@ -1,17 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const datetime = new Date();
-  document.getElementById("HeaderYear").innerHTML = datetime.getFullYear();
-  document.getElementById("HeaderMonth").innerHTML =
-    monthList[datetime.getMonth()];
-});
-
 const headerValues = ["HeaderYear", "HeaderMonth", "HeaderEvent"];
+
 const headerValuesList = {
   HeaderYear: "header-year-list",
   HeaderMonth: "header-month-list",
   HeaderEvent: "header-events-list",
 };
 
+// Rednering Header Lists For years and months
 headerValues.forEach((elem) => {
   document.getElementById(elem).addEventListener("click", () => {
     headerValues.forEach((elem) => {

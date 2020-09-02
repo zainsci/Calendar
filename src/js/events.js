@@ -1,3 +1,4 @@
+// Renders Events in the date boxes
 function showEvents() {
   fetch("./js/json/events.json")
     .then((res) => res.json())
@@ -22,6 +23,7 @@ function showEvents() {
     });
 }
 
+// Redners events in right section
 function showEventsInSection(month, day) {
   fetch("./js/json/events.json")
     .then((res) => res.json())
@@ -45,6 +47,7 @@ function showEventsInSection(month, day) {
     });
 }
 
+// Renders event details if clicked on
 function showEventDetails(date, name, remarks, type) {
   document.getElementById("selectedDay").innerHTML = date.slice(0, 2);
   const eventsDiv = document.getElementById("eventsList");
@@ -60,5 +63,3 @@ function showEventDetails(date, name, remarks, type) {
   eventsDiv.appendChild(div1);
   eventsDiv.appendChild(div2);
 }
-
-showEvents();

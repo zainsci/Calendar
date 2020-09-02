@@ -3,7 +3,7 @@
     {
       "date": "4 January",
       "name": "World Braille Day",
-      "remarks": "World Braille Day",
+      "remarks": "World Braille Day celebrates awareness of the importance of braille as a means of communication in the full realization of the human rights for blind and visually impaired people",
       "type": "global"
     }
   ],
@@ -11,31 +11,7 @@
     {
       "date": "24 January",
       "name": "International Day of Education",
-      "remarks": "International Day of Education",
-      "type": "global"
-    }
-  ],
-  "27 January": [
-    {
-      "date": "27 January",
-      "name": "International Day of Commemoration in Memory of the Victims of the Holocaust",
-      "remarks": "International Day of Commemoration in Memory of the Victims of the Holocaust",
-      "type": "global"
-    }
-  ],
-  "6 February": [
-    {
-      "date": "6 February",
-      "name": "International Day of Zero Tolerance to Female Genital Mutilation",
-      "remarks": "International Day of Zero Tolerance to Female Genital Mutilation",
-      "type": "global"
-    }
-  ],
-  "10 February": [
-    {
-      "date": "10 February",
-      "name": "World Pulses Day",
-      "remarks": "World Pulses Day",
+      "remarks": "International Day of Education is a celebration of the role of education for peace and development.",
       "type": "global"
     }
   ],
@@ -43,7 +19,7 @@
     {
       "date": "11 February",
       "name": "International Day of Women and Girls in Science",
-      "remarks": "International Day of Women and Girls in Science",
+      "remarks": "The day recognizes the critical role women and girls play in science and technology.",
       "type": "global"
     }
   ],
@@ -51,7 +27,7 @@
     {
       "date": "13 February",
       "name": "World Radio Day",
-      "remarks": "World Radio Day",
+      "remarks": "World Radio Day celebrates radio as the mass media reaching the widest audience in the world.",
       "type": "global"
     }
   ],
@@ -59,7 +35,7 @@
     {
       "date": "20 February",
       "name": "World Day of Social Justice",
-      "remarks": "World Day of Social Justice",
+      "remarks": "World Day of Social Justice is an international day recognizing the need to promote social justice, which includes efforts to tackle issues such as poverty, exclusion, gender equality, unemployment, human rights, and social protections.",
       "type": "global"
     }
   ],
@@ -67,15 +43,7 @@
     {
       "date": "21 February",
       "name": "International Mother Language Day",
-      "remarks": "International Mother Language Day",
-      "type": "global"
-    }
-  ],
-  "1 March": [
-    {
-      "date": "1 March",
-      "name": "Zero Discrimination Day",
-      "remarks": "Zero Discrimination Day",
+      "remarks": "International Monthe Language Day is celebrated to promote awareness of linguistic and cultural diversity and to promote multilingualism.",
       "type": "global"
     }
   ],
@@ -83,61 +51,21 @@
     {
       "date": "3 March",
       "name": "World Wildlife Day",
-      "remarks": "World Wildlife Day",
-      "type": "global"
-    }
-  ],
-  "8 March": [
-    {
-      "date": "8 March",
-      "name": "International Women's Day",
-      "remarks": "International Women's Day",
-      "type": "global"
-    }
-  ],
-  "20 March": [
-    {
-      "date": "20 March",
-      "name": "International Day of Happiness",
-      "remarks": "International Day of Happiness",
-      "type": "global"
-    },
-    {
-      "date": "20 March",
-      "name": "French Language Day",
-      "remarks": "French Language Day",
+      "remarks": "World Wildlife Day is the international day of the adoption of the Convention on International Trade in Endangered Species of Wild Fauna and Flora on the planet raise awarensess and benefits fauna and flora.",
       "type": "global"
     }
   ],
   "21 March": [
     {
       "date": "21 March",
-      "name": "International Day for the Elimination of Racial Discrimination",
-      "remarks": "International Day for the Elimination of Racial Discrimination",
-      "type": "global"
-    },
-    {
-      "date": "21 March",
       "name": "World Poetry Day",
-      "remarks": "World Poetry Day",
-      "type": "global"
-    },
-    {
-      "date": "21 March",
-      "name": "International Day of Nowruz",
-      "remarks": "International Day of Nowruz",
-      "type": "global"
-    },
-    {
-      "date": "21 March",
-      "name": "World Down Syndrome Day",
-      "remarks": "World Down Syndrome Day",
+      "remarks": "World Poetry Day is celebrated with the aim of supporting linguistic diversity through poetic expression and increasing the opportunity for endangered languages to be heard.",
       "type": "global"
     },
     {
       "date": "21 March",
       "name": "International Day of Forests",
-      "remarks": "International Day of Forests",
+      "remarks": "International Day of Forests is celebrate to raise awareness of the importance of all types of forests, and trees outside forests, for the benefit of current and future generations.",
       "type": "global"
     }
   ],
@@ -145,17 +73,11 @@
     {
       "date": "22 March",
       "name": "World Water Day",
-      "remarks": "World Water Day",
+      "remarks": "World Water Day  is used to advocate for the sustainable management of freshwater resources.",
       "type": "global"
     }
   ],
   "23 March": [
-    {
-      "date": "23 March",
-      "name": "World Meteorological Day",
-      "remarks": "World Meteorological Day",
-      "type": "global"
-    },
     {
       "date": "23 March",
       "name": "Pakistan Day",
@@ -163,101 +85,19 @@
       "type": "local"
     }
   ],
-  "24 March": [
-    {
-      "date": "24 March",
-      "name": "World Tuberculosis Day",
-      "remarks": "World Tuberculosis Day",
-      "type": "global"
-    },
-    {
-      "date": "24 March",
-      "name": "International Day for the Right to the Truth concerning Gross Human Rights Violations and for the Dignity of Victims",
-      "remarks": "International Day for the Right to the Truth concerning Gross Human Rights Violations and for the Dignity of Victims",
-      "type": "global"
-    }
-  ],
-  "25 March": [
-    {
-      "date": "25 March",
-      "name": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
-      "remarks": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
-      "type": "global"
-    },
-    {
-      "date": "25 March",
-      "name": "International Day of Solidarity with Detained and Missing Staff Members",
-      "remarks": "International Day of Solidarity with Detained and Missing Staff Members",
-      "type": "global"
-    }
-  ],
-  "2 April": [
-    {
-      "date": "2 April",
-      "name": "World Autism Awareness Day",
-      "remarks": "World Autism Awareness Day",
-      "type": "global"
-    }
-  ],
-  "4 April": [
-    {
-      "date": "4 April",
-      "name": "International Day for Mine Awareness and Assistance in Mine Action",
-      "remarks": "International Day for Mine Awareness and Assistance in Mine Action",
-      "type": "global"
-    }
-  ],
-  "5 April": [
-    {
-      "date": "5 April",
-      "name": "International Day of Conscience",
-      "remarks": "International Day of Conscience",
-      "type": "global"
-    }
-  ],
   "6 April": [
     {
       "date": "6 April",
       "name": "International Day of Sport for Development and Peace",
-      "remarks": "International Day of Sport for Development and Peace",
+      "remarks": "The International Day of Sport for Development and Peace is an annual celebration of the power of sport to drive social change, community development and to foster peace and understanding.",
       "type": "global"
     }
   ],
   "7 April": [
     {
       "date": "7 April",
-      "name": "International Day of Reflection on the 1994 Genocide against the Tutsi in Rwanda",
-      "remarks": "International Day of Reflection on the 1994 Genocide against the Tutsi in Rwanda",
-      "type": "global"
-    },
-    {
-      "date": "7 April",
       "name": "World Health Day",
-      "remarks": "World Health Day",
-      "type": "global"
-    }
-  ],
-  "12 April": [
-    {
-      "date": "12 April",
-      "name": "International Day of Human Space Flight",
-      "remarks": "International Day of Human Space Flight",
-      "type": "global"
-    }
-  ],
-  "14 April": [
-    {
-      "date": "14 April",
-      "name": "World Chagas Disease Day",
-      "remarks": "World Chagas Disease Day",
-      "type": "global"
-    }
-  ],
-  "20 April": [
-    {
-      "date": "20 April",
-      "name": "Chinese Language Day",
-      "remarks": "Chinese Language Day",
+      "remarks": "The World Health Day is a global health awareness day celebrated every year, under the sponsorship of the World Health Organization, as well as other related organizations.",
       "type": "global"
     }
   ],
@@ -271,7 +111,7 @@
     {
       "date": "21 April",
       "name": "Iqbal's Death Anniversary",
-      "remarks": "Death Anniversary of Allama Muhammad Iqbal",
+      "remarks": "Death Anniversary of Allama Muhammad Iqbal, National Poet and 'Spirtual Father Of Pakistan'",
       "type": "local"
     }
   ],
@@ -279,7 +119,7 @@
     {
       "date": "22 April",
       "name": "International Mother Earth Day",
-      "remarks": "International Mother Earth Day",
+      "remarks": "International Mother Earth Day recognizes that \"the Earth and its ecosystems are our home\" and that \"it is necessary to promote harmony with nature and the Earth.\"",
       "type": "global"
     },
     {
@@ -293,69 +133,7 @@
     {
       "date": "23 April",
       "name": "World Book and Copyright Day",
-      "remarks": "World Book and Copyright Day",
-      "type": "global"
-    },
-    {
-      "date": "23 April",
-      "name": "English Language Day",
-      "remarks": "English Language Day",
-      "type": "global"
-    },
-    {
-      "date": "23 April",
-      "name": "Spanish Language Day",
-      "remarks": "Spanish Language Day",
-      "type": "global"
-    },
-    {
-      "date": "23 April",
-      "name": "International Girls in ICT Day",
-      "remarks": "International Girls in ICT Day",
-      "type": "global"
-    }
-  ],
-  "24 April": [
-    {
-      "date": "24 April",
-      "name": "International Day of Multilateralism and Diplomacy for Peace",
-      "remarks": "International Day of Multilateralism and Diplomacy for Peace",
-      "type": "global"
-    }
-  ],
-  "25 April": [
-    {
-      "date": "25 April",
-      "name": "International Delegate’s Day",
-      "remarks": "International Delegate’s Day",
-      "type": "global"
-    },
-    {
-      "date": "25 April",
-      "name": "World Malaria Day",
-      "remarks": "World Malaria Day",
-      "type": "global"
-    }
-  ],
-  "26 April": [
-    {
-      "date": "26 April",
-      "name": "International Chernobyl Disaster Remembrance Day",
-      "remarks": "International Chernobyl Disaster Remembrance Day",
-      "type": "global"
-    },
-    {
-      "date": "26 April",
-      "name": "World Intellectual Property Day",
-      "remarks": "World Intellectual Property Day",
-      "type": "global"
-    }
-  ],
-  "28 April": [
-    {
-      "date": "28 April",
-      "name": "World Day for Safety and Health at Work",
-      "remarks": "World Day for Safety and Health at Work",
+      "remarks": "World Book Day, also known as World Book and Copyright Day, or International Day of the Book, is an annual event organized by the United Nations Educational, Scientific and Cultural Organization to promote reading, publishing, and copyright.",
       "type": "global"
     }
   ],
@@ -363,15 +141,7 @@
     {
       "date": "30 April",
       "name": "International Jazz Day",
-      "remarks": "International Jazz Day",
-      "type": "global"
-    }
-  ],
-  "2 May": [
-    {
-      "date": "2 May",
-      "name": "World Tuna Day",
-      "remarks": "World Tuna Day",
+      "remarks": "International Jazz Day is an International Day declared by the United Nations Educational, Scientific and Cultural Organization in 2011 \"to highlight jazz and its diplomatic role of uniting people in all corners of the globe.\" ",
       "type": "global"
     }
   ],
@@ -379,61 +149,7 @@
     {
       "date": "3 May",
       "name": "World Press Freedom Day",
-      "remarks": "World Press Freedom Day",
-      "type": "global"
-    }
-  ],
-  "7 May": [
-    {
-      "date": "7 May",
-      "name": "Vesak, the Day of the Full Moon",
-      "remarks": "Vesak, the Day of the Full Moon",
-      "type": "global"
-    }
-  ],
-  "8-9 May": [
-    {
-      "date": "8-9 May",
-      "name": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War",
-      "remarks": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives During the Second World War",
-      "type": "global"
-    }
-  ],
-  "9 May": [
-    {
-      "date": "9 May",
-      "name": "World Migratory Bird Day",
-      "remarks": "World Migratory Bird Day",
-      "type": "global"
-    }
-  ],
-  "15 May": [
-    {
-      "date": "15 May",
-      "name": "International Day of Families",
-      "remarks": "International Day of Families",
-      "type": "global"
-    }
-  ],
-  "16 May": [
-    {
-      "date": "16 May",
-      "name": "International Day of Living Together in Peace",
-      "remarks": "International Day of Living Together in Peace",
-      "type": "global"
-    },
-    {
-      "date": "16 May",
-      "name": "International Day of Light",
-      "remarks": "International Day of Light",
-      "type": "global"
-    }
-  ],
-  "17 May": [
-    {
-      "date": "17 May",
-      "name": "World Telecommunication and Information Society Day",
-      "remarks": "World Telecommunication and Information Society Day",
+      "remarks": "World Press Freedom Day is observed to raise awareness of the importance of freedom of the press and remind governments of their duty to respect and uphold the right to freedom of expression",
       "type": "global"
     }
   ],
@@ -441,7 +157,7 @@
     {
       "date": "20 May",
       "name": "World Bee Day",
-      "remarks": "World Bee Day",
+      "remarks": "The purpose of the international World Bee Day is to acknowledge the role of bees and other pollinators for the ecosystem.",
       "type": "global"
     }
   ],
@@ -449,45 +165,7 @@
     {
       "date": "21 May",
       "name": "International Tea Day",
-      "remarks": "International Tea Day",
-      "type": "global"
-    },
-    {
-      "date": "21 May",
-      "name": "World Day for Cultural Diversity for Dialogue and Development",
-      "remarks": "World Day for Cultural Diversity for Dialogue and Development",
-      "type": "global"
-    }
-  ],
-  "22 May": [
-    {
-      "date": "22 May",
-      "name": "International Day for Biological Diversity",
-      "remarks": "International Day for Biological Diversity",
-      "type": "global"
-    }
-  ],
-  "23 May": [
-    {
-      "date": "23 May",
-      "name": "International Day to End Obstetric Fistula",
-      "remarks": "International Day to End Obstetric Fistula",
-      "type": "global"
-    }
-  ],
-  "29 May": [
-    {
-      "date": "29 May",
-      "name": "International Day of UN Peacekeepers",
-      "remarks": "International Day of UN Peacekeepers",
-      "type": "global"
-    }
-  ],
-  "31 May": [
-    {
-      "date": "31 May",
-      "name": "World No-Tobacco Day",
-      "remarks": "World No-Tobacco Day",
+      "remarks": "The International Tea Day aims to raise awareness of the long history and the deep cultural and economic significance of tea around the world. ",
       "type": "global"
     }
   ],
@@ -495,23 +173,7 @@
     {
       "date": "1 June",
       "name": "Global Day of Parents",
-      "remarks": "Global Day of Parents",
-      "type": "global"
-    }
-  ],
-  "3 June": [
-    {
-      "date": "3 June",
-      "name": "World Bicycle Day",
-      "remarks": "World Bicycle Day",
-      "type": "global"
-    }
-  ],
-  "4 June": [
-    {
-      "date": "4 June",
-      "name": "International Day of Innocent Children Victims of Aggression",
-      "remarks": "International Day of Innocent Children Victims of Aggression",
+      "remarks": "Global Day of Parents provides an opportunity to appreciate all parents in all parts of the world for their selfless commitment to children and their lifelong sacrifice towards nurturing this relationship.",
       "type": "global"
     }
   ],
@@ -519,123 +181,15 @@
     {
       "date": "5 June",
       "name": "World Environment Day",
-      "remarks": "World Environment Day",
-      "type": "global"
-    },
-    {
-      "date": "5 June",
-      "name": "International Day for the Fight against Illegal, Unreported and Unregulated Fishing",
-      "remarks": "International Day for the Fight against Illegal, Unreported and Unregulated Fishing",
-      "type": "global"
-    }
-  ],
-  "6 June": [
-    {
-      "date": "6 June",
-      "name": "Russian Language Day",
-      "remarks": "Russian Language Day",
-      "type": "global"
-    }
-  ],
-  "7 June": [
-    {
-      "date": "7 June",
-      "name": "World Food Safety Day",
-      "remarks": "World Food Safety Day",
-      "type": "global"
-    }
-  ],
-  "8 June": [
-    {
-      "date": "8 June",
-      "name": "World Oceans Day",
-      "remarks": "World Oceans Day",
-      "type": "global"
-    }
-  ],
-  "12 June": [
-    {
-      "date": "12 June",
-      "name": "World Day Against Child Labour",
-      "remarks": "World Day Against Child Labour",
-      "type": "global"
-    }
-  ],
-  "13 June": [
-    {
-      "date": "13 June",
-      "name": "International Albinism Awareness Day",
-      "remarks": "International Albinism Awareness Day",
-      "type": "global"
-    }
-  ],
-  "14 June": [
-    {
-      "date": "14 June",
-      "name": "World Blood Donor Day",
-      "remarks": "World Blood Donor Day",
-      "type": "global"
-    }
-  ],
-  "15 June": [
-    {
-      "date": "15 June",
-      "name": "World Elder Abuse Awareness Day",
-      "remarks": "World Elder Abuse Awareness Day",
-      "type": "global"
-    }
-  ],
-  "16 June": [
-    {
-      "date": "16 June",
-      "name": "International Day of Family Remittances",
-      "remarks": "International Day of Family Remittances",
-      "type": "global"
-    }
-  ],
-  "17 June": [
-    {
-      "date": "17 June",
-      "name": "World Day to Combat Desertification and Drought",
-      "remarks": "World Day to Combat Desertification and Drought",
-      "type": "global"
-    }
-  ],
-  "18 June": [
-    {
-      "date": "18 June",
-      "name": "Sustainable Gastronomy Day",
-      "remarks": "Sustainable Gastronomy Day",
-      "type": "global"
-    }
-  ],
-  "19 June": [
-    {
-      "date": "19 June",
-      "name": "International Day for the Elimination of Sexual Violence in Conflict",
-      "remarks": "International Day for the Elimination of Sexual Violence in Conflict",
-      "type": "global"
-    }
-  ],
-  "20 June": [
-    {
-      "date": "20 June",
-      "name": "World Refugee Day",
-      "remarks": "World Refugee Day",
+      "remarks": "World Environment Day is celebrated on 5 June every year, and is the United Nations' principal vehicle for encouraging awareness and action for the protection of the environment.",
       "type": "global"
     }
   ],
   "21 June": [
     {
       "date": "21 June",
-      "name": "International Day of Yoga",
-      "remarks": "International Day of Yoga",
-      "type": "global"
-    },
-    {
-      "date": "21 June",
       "name": "International Day of the Celebration of the Solstice",
-      "remarks": "International Day of the Celebration of the Solstice",
+      "remarks": "International Day of the Celebration of the Solstice brings awareness to the importance that solstices and equinoxes have for many religions.",
       "type": "global"
     }
   ],
@@ -644,12 +198,6 @@
       "date": "23 June",
       "name": "United Nations Public Service Day",
       "remarks": "United Nations Public Service Day",
-      "type": "global"
-    },
-    {
-      "date": "23 June",
-      "name": "International Widows' Day",
-      "remarks": "International Widows' Day",
       "type": "global"
     }
   ],
@@ -666,12 +214,6 @@
       "date": "26 June",
       "name": "International Day against Drug Abuse and Illicit Trafficking",
       "remarks": "International Day against Drug Abuse and Illicit Trafficking",
-      "type": "global"
-    },
-    {
-      "date": "26 June",
-      "name": "United Nations International Day in Support of Victims of Torture",
-      "remarks": "United Nations International Day in Support of Victims of Torture",
       "type": "global"
     }
   ],
@@ -696,12 +238,6 @@
       "date": "30 June",
       "name": "International Asteroid Day",
       "remarks": "International Asteroid Day",
-      "type": "global"
-    },
-    {
-      "date": "30 June",
-      "name": "International Day of Parliamentarism",
-      "remarks": "International Day of Parliamentarism",
       "type": "global"
     }
   ],
@@ -791,43 +327,11 @@
       "type": "global"
     }
   ],
-  "21 August": [
-    {
-      "date": "21 August",
-      "name": "International Day of Remembrance and Tribute to the Victims of Terrorism",
-      "remarks": "International Day of Remembrance and Tribute to the Victims of Terrorism",
-      "type": "global"
-    }
-  ],
-  "22 August": [
-    {
-      "date": "22 August",
-      "name": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief",
-      "remarks": "International Day Commemorating the Victims of Acts of Violence Based on Religion or Belief",
-      "type": "global"
-    }
-  ],
-  "23 August": [
-    {
-      "date": "23 August",
-      "name": "International Day for the Remembrance of the Slave Trade and Its Abolition",
-      "remarks": "International Day for the Remembrance of the Slave Trade and Its Abolition",
-      "type": "global"
-    }
-  ],
   "29 August": [
     {
       "date": "29 August",
       "name": "International Day against Nuclear Tests",
       "remarks": "International Day against Nuclear Tests",
-      "type": "global"
-    }
-  ],
-  "30 August": [
-    {
-      "date": "30 August",
-      "name": "International Day of the Victims of Enforced Disappearances",
-      "remarks": "International Day of the Victims of Enforced Disappearances",
       "type": "global"
     }
   ],
@@ -875,14 +379,6 @@
       "type": "global"
     }
   ],
-  "12 September": [
-    {
-      "date": "12 September",
-      "name": "United Nations Day for South-South Cooperation",
-      "remarks": "United Nations Day for South-South Cooperation",
-      "type": "global"
-    }
-  ],
   "15 September": [
     {
       "date": "15 September",
@@ -899,22 +395,6 @@
       "type": "global"
     }
   ],
-  "17 September": [
-    {
-      "date": "17 September",
-      "name": "World Patient Safety Day",
-      "remarks": "World Patient Safety Day",
-      "type": "global"
-    }
-  ],
-  "18 September": [
-    {
-      "date": "18 September",
-      "name": "International Equal Pay Day",
-      "remarks": "International Equal Pay Day",
-      "type": "global"
-    }
-  ],
   "21 September": [
     {
       "date": "21 September",
@@ -928,14 +408,6 @@
       "date": "23 September",
       "name": "International Day of Sign Languages",
       "remarks": "International Day of Sign Languages",
-      "type": "global"
-    }
-  ],
-  "24 September": [
-    {
-      "date": "24 September",
-      "name": "World Maritime Day",
-      "remarks": "World Maritime Day",
       "type": "global"
     }
   ],
@@ -960,14 +432,6 @@
       "date": "28 September",
       "name": "International Day for Universal Access to Information",
       "remarks": "International Day for Universal Access to Information",
-      "type": "global"
-    }
-  ],
-  "29 September": [
-    {
-      "date": "29 September",
-      "name": "International Day of Awareness of Food Loss and Waste",
-      "remarks": "International Day of Awareness of Food Loss and Waste",
       "type": "global"
     }
   ],
@@ -1001,12 +465,6 @@
       "name": "World Teachers’ Day",
       "remarks": "World Teachers’ Day",
       "type": "global"
-    },
-    {
-      "date": "5 October",
-      "name": "World Habitat Day",
-      "remarks": "World Habitat Day",
-      "type": "global"
     }
   ],
   "9 October": [
@@ -1022,12 +480,6 @@
       "date": "10 October",
       "name": "World Mental Health Day",
       "remarks": "World Mental Health Day",
-      "type": "global"
-    },
-    {
-      "date": "10 October",
-      "name": "World Migratory Bird Day",
-      "remarks": "World Migratory Bird Day",
       "type": "global"
     }
   ],
@@ -1099,14 +551,6 @@
       "type": "global"
     }
   ],
-  "27 October": [
-    {
-      "date": "27 October",
-      "name": "World Day for Audiovisual Heritage",
-      "remarks": "World Day for Audiovisual Heritage",
-      "type": "global"
-    }
-  ],
   "31 October": [
     {
       "date": "31 October",
@@ -1115,27 +559,11 @@
       "type": "global"
     }
   ],
-  "2 November": [
-    {
-      "date": "2 November",
-      "name": "International Day to End Impunity for Crimes against Journalists",
-      "remarks": "International Day to End Impunity for Crimes against Journalists",
-      "type": "global"
-    }
-  ],
   "5 November": [
     {
       "date": "5 November",
       "name": "World Tsunami Awareness Day",
       "remarks": "World Tsunami Awareness Day",
-      "type": "global"
-    }
-  ],
-  "6 November": [
-    {
-      "date": "6 November",
-      "name": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
-      "remarks": "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
       "type": "global"
     }
   ],
@@ -1166,16 +594,16 @@
   "16 November": [
     {
       "date": "16 November",
-      "name": "International Day for Tolerance  ",
-      "remarks": "International Day for Tolerance  ",
+      "name": "International Day for Tolerance",
+      "remarks": "International Day for Tolerance",
       "type": "global"
     }
   ],
   "19 November": [
     {
       "date": "19 November",
-      "name": "World Toilet Day    ",
-      "remarks": "World Toilet Day    ",
+      "name": "World Toilet Day",
+      "remarks": "World Toilet Day",
       "type": "global"
     }
   ],
@@ -1233,14 +661,6 @@
       "type": "global"
     }
   ],
-  "1 December": [
-    {
-      "date": "1 December",
-      "name": "World AIDS Day",
-      "remarks": "World AIDS Day",
-      "type": "global"
-    }
-  ],
   "2 December": [
     {
       "date": "2 December",
@@ -1290,12 +710,6 @@
   "9 December": [
     {
       "date": "9 December",
-      "name": "International Day of Commemoration and Dignity of the Victims of the Crime of Genocide and of the Prevention of this Crime  ",
-      "remarks": "International Day of Commemoration and Dignity of the Victims of the Crime of Genocide and of the Prevention of this Crime  ",
-      "type": "global"
-    },
-    {
-      "date": "9 December",
       "name": "International Anti-Corruption Day  ",
       "remarks": "International Anti-Corruption Day  ",
       "type": "global"
@@ -1336,12 +750,6 @@
       "date": "18 December",
       "name": "International Migrants Day  ",
       "remarks": "International Migrants Day  ",
-      "type": "global"
-    },
-    {
-      "date": "18 December",
-      "name": "Arabic Language Day ",
-      "remarks": "Arabic Language Day ",
       "type": "global"
     }
   ],

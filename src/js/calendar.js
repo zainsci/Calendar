@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const d = new Date();
-  const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
-  printCalendar(calendar);
-  showDateAndEvents(d.getDate(), d.getDay());
-});
-
 const monthList = [
   "January",
   "February",
@@ -45,7 +38,18 @@ const dayName = [
   "Saturday",
 ];
 
-// Month In DOM
+// Runs after the DOMContent is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  const d = new Date();
+  const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
+  printCalendar(calendar);
+  showEvents();
+  showDateAndEvents(d.getDate(), d.getDay());
+  document.getElementById("HeaderYear").innerHTML = d.getFullYear();
+  document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
+});
+
+// Renders Month In DOM
 function printCalendar(calendar) {
   const monthGridDOM = document.getElementById("monthGrid");
   monthGridDOM.innerHTML = "";
@@ -83,6 +87,7 @@ function printCalendar(calendar) {
   monthGridDOM.appendChild(div);
 }
 
+// Redners date and events in the right section
 function showDateAndEvents(day, i) {
   const year = document.getElementById("HeaderYear").innerHTML;
   const month = document.getElementById("HeaderMonth").innerHTML;
@@ -94,6 +99,7 @@ function showDateAndEvents(day, i) {
   showEventsInSection(month, day);
 }
 
+// Redners previous month if clicked on previous month date
 function showPreviousMonth() {
   const currentMonth = document.getElementById("HeaderMonth");
   const currentYear = document.getElementById("HeaderYear");
@@ -113,6 +119,8 @@ function showPreviousMonth() {
   currentYear.innerHTML = year;
   showEvents();
 }
+
+// Redners next month if clicked on next month date
 function showNextMonth() {
   const currentMonth = document.getElementById("HeaderMonth");
   const currentYear = document.getElementById("HeaderYear");
@@ -133,7 +141,7 @@ function showNextMonth() {
   showEvents();
 }
 
-//
+// get Calender according to given year and month
 function getCalender(y, m) {
   const calendarGrid = [];
   y = parseInt(y, 10);
@@ -204,6 +212,7 @@ function isLeap(y) {
   return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
 }
 
+// Find no of days of previos month
 function findPreMonthDays() {
   let sunday = date.getDate() - date.getDay();
   sunday = ((sunday % 7) - 7 - 1) % -7;
