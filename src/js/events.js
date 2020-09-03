@@ -50,16 +50,29 @@ function showEventsInSection(month, day) {
 // Renders event details if clicked on
 function showEventDetails(event) {
   document.getElementById("popupEventWin").style.display = "flex";
-  const eventsDiv = document.getElementById("popupEvent");
-  // eventsDiv.innerHTML = "";
+  const eventsDiv = document.getElementById("eventDetails");
+  eventsDiv.innerHTML = "";
 
-  // const div1 = document.createElement("div");
-  // div1.classList = `event ${type}`;
-  // div1.innerHTML = name;
-  // const div2 = document.createElement("div");
-  // div2.classList = `event ${type}`;
-  // div2.innerHTML = remarks;
+  const eventName = document.createElement("div");
+  const eventDes = document.createElement("div");
+  const eventSearch = document.createElement("div");
+  const eventSearchLink = document.createElement("a");
 
-  // eventsDiv.appendChild(div1);
-  // eventsDiv.appendChild(div2);
+  eventName.classList = `event-name ${event.type}`;
+  eventName.innerHTML = event.name;
+  eventDes.classList = `event-description ${event.type}`;
+  eventDes.innerHTML = event.remarks;
+  eventSearch.classList = `search-google`;
+  eventSearchLink.setAttribute("target", "_blank");
+  eventSearchLink.setAttribute("rel", "noopener noreferrer");
+  eventSearchLink.href = `https://www.google.com/search?q=${event.name.replace(
+    " ",
+    "%20"
+  )}`;
+  eventSearchLink.innerHTML = "Search In Google";
+  eventSearch.appendChild(eventSearchLink);
+
+  eventsDiv.appendChild(eventName);
+  eventsDiv.appendChild(eventDes);
+  eventsDiv.appendChild(eventSearch);
 }

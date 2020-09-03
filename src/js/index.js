@@ -1,5 +1,4 @@
 const headerValues = ["HeaderYear", "HeaderMonth", "HeaderEvent"];
-
 const headerValuesList = {
   HeaderYear: "header-year-list",
   HeaderMonth: "header-month-list",

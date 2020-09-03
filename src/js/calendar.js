@@ -62,18 +62,29 @@ function printCalendar(calendar) {
     const li = document.createElement("li");
 
     if (calendar[i] > 7 && i < 7) {
-      li.classList = "previous-month date box";
+      if (i % 7 == 0 || i % 7 == 6) {
+        li.classList = "previous-month weekend date box";
+      } else {
+        li.classList = "previous-month date box";
+      }
       li.addEventListener("click", () => {
         showPreviousMonth(calendar[i], i);
       });
     } else if (calendar[i] < 14 && i > 28) {
-      li.classList = "next-month date box";
+      if (i % 7 == 0 || i % 7 == 6) {
+        li.classList = "next-month weekend date box";
+      } else {
+        li.classList = "next-month date box";
+      }
       li.addEventListener("click", () => {
         showNextMonth(calendar[i], i);
       });
     } else {
-      li.classList = "this-month date box";
-
+      if (i % 7 == 0 || i % 7 == 6) {
+        li.classList = "this-month weekend date box";
+      } else {
+        li.classList = "this-month date box";
+      }
       li.addEventListener("click", () => {
         showDateAndEvents(calendar[i], i % 7);
       });

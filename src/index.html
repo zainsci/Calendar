@@ -1,149 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Calender</title>
-  </head>
 
-  <body>
-    <div class="border">
-      <div class="container">
-        <div id="Main">
-          <header id="CalenderHeader">
-            <div class="header-year header-dropdown">
-              <div class="header-box">
-                <div id="HeaderYear">2020</div>
-              </div>
-              <div class="header-year-list">
-                <ul>
-                  <li>2020</li>
-                  <li>2019</li>
-                  <li>2018</li>
-                  <li>2017</li>
-                  <li>2016</li>
-                  <li>2015</li>
-                  <li>2014</li>
-                  <li>2013</li>
-                  <li>2012</li>
-                  <li>2011</li>
-                </ul>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Calender</title>
+</head>
+
+<body>
+  <div class="border">
+    <div class="container">
+      <div id="Main">
+        <header id="CalenderHeader">
+          <div class="header-year header-dropdown">
+            <div class="header-box">
+              <div id="HeaderYear">2020</div>
             </div>
-            <div class="header-month header-dropdown">
-              <div class="header-box">
-                <div id="HeaderMonth">Aug</div>
-              </div>
-              <div class="header-month-list">
-                <ul>
-                  <li data-month="1">January</li>
-                  <li data-month="2">February</li>
-                  <li data-month="3">March</li>
-                  <li data-month="4">April</li>
-                  <li data-month="5">May</li>
-                  <li data-month="6">June</li>
-                  <li data-month="7">July</li>
-                  <li data-month="8">August</li>
-                  <li data-month="9">September</li>
-                  <li data-month="10">October</li>
-                  <li data-month="11">November</li>
-                  <li data-month="12">December</li>
-                </ul>
-              </div>
-            </div>
-            <div class="header-events header-dropdown">
-              <div class="header-box">
-                <div id="HeaderEvent">New Year</div>
-              </div>
-              <div class="header-events-list">
-                <ul>
-                  <li>New Year</li>
-                  <li>Earth Day</li>
-                  <li>Labor Day</li>
-                  <li>Independence Day</li>
-                  <li>Eid Ul Fitr</li>
-                </ul>
-              </div>
-            </div>
-            <div class="header-dropdown">
-              <div class="header-box">
-                <div id="HeaderToday">Aug</div>
-              </div>
-            </div>
-          </header>
-          <main id="CalenderBody">
-            <div class="weekdays">
+            <div class="header-year-list">
               <ul>
-                <li class="day box">Sun</li>
-                <li class="day box">Mon</li>
-                <li class="day box">Tue</li>
-                <li class="day box">Wed</li>
-                <li class="day box">Thu</li>
-                <li class="day box">Fri</li>
-                <li class="day box">Sat</li>
+                <li>2020</li>
+                <li>2019</li>
+                <li>2018</li>
+                <li>2017</li>
+                <li>2016</li>
+                <li>2015</li>
+                <li>2014</li>
+                <li>2013</li>
+                <li>2012</li>
+                <li>2011</li>
               </ul>
             </div>
-            <div class="days" id="monthGrid"></div>
-          </main>
-        </div>
-        <section>
-          <div class="select" id="select"></div>
-          <div>
-            <div class="selected-day" id="selectedDay"></div>
           </div>
-          <div class="events" id="eventsList"></div>
-        </section>
+          <div class="header-month header-dropdown">
+            <div class="header-box">
+              <div id="HeaderMonth">Aug</div>
+            </div>
+            <div class="header-month-list">
+              <ul>
+                <li data-month="1">January</li>
+                <li data-month="2">February</li>
+                <li data-month="3">March</li>
+                <li data-month="4">April</li>
+                <li data-month="5">May</li>
+                <li data-month="6">June</li>
+                <li data-month="7">July</li>
+                <li data-month="8">August</li>
+                <li data-month="9">September</li>
+                <li data-month="10">October</li>
+                <li data-month="11">November</li>
+                <li data-month="12">December</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-events header-dropdown">
+            <div class="header-box">
+              <div id="HeaderEvent">New Year</div>
+            </div>
+            <div class="header-events-list">
+              <ul>
+                <li>New Year</li>
+                <li>Earth Day</li>
+                <li>Labor Day</li>
+                <li>Independence Day</li>
+                <li>Eid Ul Fitr</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-dropdown">
+            <div class="header-box">
+              <div id="HeaderToday">Aug</div>
+            </div>
+          </div>
+        </header>
+        <main id="CalenderBody">
+          <div class="weekdays">
+            <ul>
+              <li class="weekend day box">Sun</li>
+              <li class="day box">Mon</li>
+              <li class="day box">Tue</li>
+              <li class="day box">Wed</li>
+              <li class="day box">Thu</li>
+              <li class="day box">Fri</li>
+              <li class="weekend day box">Sat</li>
+            </ul>
+          </div>
+          <div class="days" id="monthGrid"></div>
+        </main>
       </div>
-    </div>
-
-    <div class="popup" id="popupEventWin">
-      <div class="popup-event" id="popupEvent">
-        <div class="cross" id="crossEvent">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            class="bi bi-x"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
+      <section>
+        <div class="select" id="select"></div>
+        <div>
+          <div class="selected-day" id="selectedDay"></div>
         </div>
-        <div class="event-details" id="eventDetails">
-          <div class="event-name local">Lorem ipsum dolor sit amet.</div>
-          <div class="event-description local">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-            velit quod tenetur modi sed laborum odit laboriosam quisquam
-            excepturi. Tempore corrupti totam vel ipsum aut.
-          </div>
+        <div class="events" id="eventsList"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="popup" id="popupEventWin" style="display: none;">
+    <div class="popup-event" id="popupEvent">
+      <div class="cross" id="crossEvent">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </div>
+      <div class="event-details" id="eventDetails">
+        <div class="event-name local">Lorem ipsum dolor sit amet.</div>
+        <div class="event-description local">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          velit quod tenetur modi sed laborum odit laboriosam quisquam
+          excepturi. Tempore corrupti totam vel ipsum aut.
         </div>
         <div class="search-google">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.google.com/search?q="
-          >
-            Search In Google</a
-          >
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=">
+            Search In Google</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="./js/calendar.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/events.js"></script>
-  </body>
+  <script src="./js/calendar.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/events.js"></script>
+</body>
+
 </html>
