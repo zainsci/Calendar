@@ -1,16 +1,11 @@
-$green: #06d6a0;
-$blue: #118ab2;
-$yellow: #ffd166;
-$dark: #073b4c;
-$red: #ef476f;
-
-$purple: #645aa3;
-$weekend: #d1cde4;
-$light: #f1f1f1;
-$black: #434e54;
-$white: white;
-$local: #f4a81f;
-$global: #edc01c;
+$green: #69ec86;
+$blue: #1297e6;
+$purple: #b56af8;
+$yellow: #ffcb51;
+$dark: #2d3039;
+$light: #060c18;
+$white: #e3e1e2;
+$text: #273128;
 
 $oswald-font: "Oswald", sans-serif;
 
@@ -36,50 +31,49 @@ ol {
   justify-content: center;
 }
 
-.border {
-  border: 1px solid $white;
-}
 .header-dropdown {
-  border: 1px solid $white;
   height: 40px;
   position: relative;
 }
 
 .next-month {
-  color: $purple;
+  color: $blue;
 }
 
 .box {
   width: 90px;
-  border-right: 1px solid $white;
-  border-bottom: 1px solid $white;
+  border-right: 2.5px solid $light;
+  border-bottom: 2.5px solid $light;
+  background-color: $dark !important;
+  border-radius: 7px !important;
   padding: 5px;
 }
 .date {
   height: 80px;
   cursor: pointer;
   &:hover {
-    background-color: $light;
+    background-color: darken($color: $dark, $amount: 10) !important;
   }
 }
 
 .local {
-  background-color: $local !important;
-  color: black !important;
+  background-color: $purple !important;
+  color: $white !important;
 }
 .global {
-  background-color: $global !important;
-  color: black !important;
+  background-color: $blue !important;
+  color: $white !important;
 }
 
 .weekend {
-  background-color: $weekend;
+  background-color: lighten($color: $dark, $amount: 5);
 }
 
 .container {
   width: 880px;
   height: 615px;
   border-top: 5px solid $purple;
+  background-color: $light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,14 +98,14 @@ ol {
         display: none;
         ul {
           width: 100%;
-          background-color: $purple;
-          border: 1px solid $white;
+          border: 1px solid $light;
+          background-color: $dark;
+          box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.64);
           color: $white;
           border-radius: 5px;
           display: flex;
           flex-direction: column;
           justify-content: left !important;
-          box-shadow: 0px 5px 10px 0px rgba(238, 238, 238, 1);
           position: absolute;
           top: 50px;
           left: 0;
@@ -122,7 +116,7 @@ ol {
             cursor: pointer;
             overflow: hidden;
             &:hover {
-              background-color: darken($color: $purple, $amount: 10);
+              background-color: darken($color: $dark, $amount: 10);
               color: $white;
             }
           }
@@ -132,27 +126,29 @@ ol {
         width: 100%;
         height: 100%;
         text-align: left;
-        background-color: $purple;
+        background-color: $dark !important;
         color: $white;
         cursor: pointer;
-        padding: 8px 12px;
+        padding: 4px 12px;
         overflow: hidden;
         white-space: nowrap;
+        border: 2.5px solid $light;
+        border-radius: 7px;
         &:hover {
-          background-color: darken($color: $purple, $amount: 10);
+          background-color: darken($color: $dark, $amount: 10);
         }
       }
     }
     main {
       width: 100%;
-      color: $purple;
+      color: $white;
       .previous-month,
       .next-month {
-        color: lighten($color: $purple, $amount: 20);
+        color: darken($color: $white, $amount: 10);
       }
       .days {
-        border-top: 1px solid $white;
-        border-left: 1px solid $white;
+        border-top: 1px solid $light;
+        border-left: 1px solid $light;
         ul {
           display: grid;
           grid-template-columns: repeat(7, 90px);
@@ -161,6 +157,7 @@ ol {
             flex-direction: column;
             position: relative;
             overflow: hidden;
+            background-color: $dark;
             ul {
               margin: 5px;
               height: 60px;
@@ -195,8 +192,8 @@ ol {
         }
       }
       .weekdays {
-        border-top: 1px solid $white;
-        border-left: 1px solid $white;
+        border-top: 1px solid $light;
+        border-left: 1px solid $light;
         margin-bottom: 10px;
       }
     }
@@ -204,10 +201,11 @@ ol {
   section {
     width: 250px;
     height: 100%;
-    border-left: 1px solid $white;
+    border-left: 1px solid $light;
+    color: $white;
     padding: 10px;
     .select {
-      background-color: $purple;
+      background-color: $dark;
       height: 40px;
       width: 190px;
       margin: auto;
@@ -224,7 +222,7 @@ ol {
       width: 190px;
       height: 190px;
       border-radius: 5px;
-      background-color: $weekend;
+      background-color: $dark;
       font-size: 64px;
     }
     .events {
@@ -233,7 +231,7 @@ ol {
         width: 190px;
         margin: auto;
         padding: 5px 10px;
-        background-color: $weekend;
+        background-color: $dark;
         border-radius: 5px;
         margin-bottom: 10px;
         cursor: pointer;
@@ -245,7 +243,7 @@ ol {
 .popup {
   width: 880px;
   height: 615px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -255,7 +253,7 @@ ol {
   .popup-event {
     width: 500px;
     height: 300px;
-    background-color: white;
+    background-color: $white;
     z-index: 1002;
     border-radius: 5px;
     padding: 15px;
