@@ -38,6 +38,10 @@ const dayName = [
   "Saturday",
 ];
 
+const d = new Date();
+document.getElementById("HeaderYear").innerHTML = d.getFullYear();
+document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
+
 // Runs after the DOMContent is loaded
 document.addEventListener("DOMContentLoaded", () => {
   const d = new Date();
@@ -45,8 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   printCalendar(calendar);
   showEvents();
   showDateAndEvents(d.getDate(), d.getDay());
-  document.getElementById("HeaderYear").innerHTML = d.getFullYear();
-  document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
 });
 
 // Renders Month In DOM
@@ -80,10 +82,24 @@ function printCalendar(calendar) {
         showNextMonth(calendar[i], i);
       });
     } else {
-      if (i % 7 == 0 || i % 7 == 6) {
-        li.classList = "this-month weekend date box";
+      const d = new Date();
+      const month = monthNo[document.getElementById("HeaderMonth").innerHTML];
+      if (
+        calendar[i] == d.getDate() &&
+        d.getMonth() == month - 1 &&
+        d.getFullYear() == document.getElementById("HeaderYear").innerHTML
+      ) {
+        if (i % 7 == 0 || i % 7 == 6) {
+          li.classList = "this-month today weekend date box";
+        } else {
+          li.classList = "this-month today date box";
+        }
       } else {
-        li.classList = "this-month date box";
+        if (i % 7 == 0 || i % 7 == 6) {
+          li.classList = "this-month weekend date box";
+        } else {
+          li.classList = "this-month date box";
+        }
       }
       li.addEventListener("click", () => {
         showDateAndEvents(calendar[i], i % 7);

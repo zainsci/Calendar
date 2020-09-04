@@ -40,6 +40,17 @@ document.getElementById("crossEvent").onclick = () => {
   document.getElementById("popupEventWin").style.display = "none";
 };
 
+// Getting Today on Calender
+document.getElementById("HeaderToday").onclick = () => {
+  const d = new Date();
+  document.getElementById("HeaderYear").innerHTML = d.getFullYear();
+  document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
+  const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
+  printCalendar(calendar);
+  showEvents();
+};
+
+// Toggle Display
 function toggleDisplay(elem) {
   const curDisplayStyle = elem.style.display;
 

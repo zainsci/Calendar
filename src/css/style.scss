@@ -66,7 +66,12 @@ ol {
 }
 
 .weekend {
-  background-color: lighten($color: $dark, $amount: 5);
+  background-color: lighten($color: $dark, $amount: 10) !important;
+}
+
+.today {
+  border: 2.5px solid $yellow !important;
+  color: $yellow;
 }
 
 .container {
@@ -144,7 +149,7 @@ ol {
       color: $white;
       .previous-month,
       .next-month {
-        color: darken($color: $white, $amount: 10);
+        color: darken($color: $white, $amount: 30);
       }
       .days {
         border-top: 1px solid $light;
@@ -172,7 +177,7 @@ ol {
               bottom: 0;
               left: 0;
               li {
-                width: 80px;
+                width: 78px;
                 border-radius: 3px;
                 padding: 2px 5px;
                 margin-bottom: 2px;
