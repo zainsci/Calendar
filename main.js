@@ -1,18 +1,15 @@
-const { app, BrowserWindow } = require("electron");
+const electron = require("electron");
 
 function createWindow() {
-  const win = new BrowserWindow({
-    width: 880,
-    height: 635,
+  const win = new electron.BrowserWindow({
+    width: 896,
+    height: 674,
     webPreferences: {
       nodeIntegration: true,
     },
   });
 
   win.loadFile("./src/index.html");
-
-  // Open the DevTools.
-  win.webContents.openDevTools();
 }
 
-app.whenReady().then(createWindow);
+electron.app.whenReady().then(createWindow);
