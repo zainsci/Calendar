@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   printCalendar(calendar);
   showEvents();
   showDateAndEvents(d.getDate(), d.getDay());
+  highlightDate();
 });
 
 // Renders Month In DOM
@@ -123,6 +124,7 @@ function showDateAndEvents(day, i) {
   ${month.slice(0, 3)} ${day}, ${year} - ${daysName.slice(0, 3)}
   `;
   document.getElementById("selectedDay").innerHTML = day;
+  document.getElementById("eventsList").innerHTML = "";
   showEventsInSection(month, day);
 }
 
@@ -145,6 +147,7 @@ function showPreviousMonth() {
   currentMonth.innerHTML = monthList[month - 1];
   currentYear.innerHTML = year;
   showEvents();
+  highlightDate();
 }
 
 // Redners next month if clicked on next month date
@@ -166,6 +169,7 @@ function showNextMonth() {
   currentMonth.innerHTML = monthList[month - 1];
   currentYear.innerHTML = year;
   showEvents();
+  highlightDate();
 }
 
 // get Calender according to given year and month

@@ -30,6 +30,7 @@ headerValues.forEach((elem) => {
         const calendar = getCalender(year, month);
         printCalendar(calendar);
         showEvents();
+        highlightDate();
       });
     });
   });
@@ -48,6 +49,14 @@ document.getElementById("HeaderToday").onclick = () => {
   const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
   printCalendar(calendar);
   showEvents();
+  document.getElementById("select").innerHTML = `
+  ${monthList[d.getMonth()].slice(0, 3)} ${
+    d.getDay() - 1
+  }, ${d.getFullYear()} - ${dayName[d.getDay()].slice(0, 3)}
+  `;
+  document.getElementById("selectedDay").innerHTML = d.getDay() - 1;
+  showEventsInSection(monthList[d.getMonth()], d.getDay() - 1);
+  highlightDate();
 };
 
 // Toggle Display
@@ -59,4 +68,15 @@ function toggleDisplay(elem) {
   } else {
     elem.style.display = "none";
   }
+}
+
+function highlightDate() {
+  document.querySelectorAll("li.date").forEach((day) => {
+    day.addEventListener("click", () => {
+      document.querySelectorAll(".date").forEach((item) => {
+        item.classList.remove("selected-now");
+      });
+      day.classList.add("selected-now");
+    });
+  });
 }

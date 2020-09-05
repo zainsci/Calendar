@@ -74,6 +74,10 @@ ol {
   color: $yellow;
 }
 
+.selected-now {
+  border: 2.5px solid $white !important;
+}
+
 .container {
   width: 880px;
   height: 615px;
@@ -140,7 +144,7 @@ ol {
         border: 2.5px solid $light;
         border-radius: 7px;
         &:hover {
-          background-color: darken($color: $dark, $amount: 10);
+          background-color: darken($color: $dark, $amount: 10) !important;
         }
       }
     }
