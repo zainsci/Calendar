@@ -18,6 +18,7 @@ $oswald-font: "Oswald", sans-serif;
 body {
   font-family: "Alata", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -76,6 +77,47 @@ ol {
 
 .selected-now {
   border: 2.5px solid $white !important;
+}
+
+.frame {
+  width: 880px;
+  height: 30px;
+  background-color: $light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  padding: 0 10px;
+  .logo-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    span {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+  .utils {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .minimize,
+    .close {
+      height: 30px;
+      width: 40px;
+      background-color: $light;
+      color: $white;
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: lighten($color: $light, $amount: 20);
+      }
+    }
+  }
 }
 
 .container {
