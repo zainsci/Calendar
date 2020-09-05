@@ -74,5 +74,5 @@ function showEventDetails(event) {
 
   eventsDiv.appendChild(eventName);
   eventsDiv.appendChild(eventDes);
-  eventsDiv.appendChild(eventSearch);
+  document.getElementById("popupEvent").appendChild(eventSearch);
 }

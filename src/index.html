@@ -46,6 +46,7 @@
             class="bi bi-dash"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
+            id="minimizeWindow"
           >
             <path
               fill-rule="evenodd"
@@ -61,6 +62,7 @@
             class="bi bi-x"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
+            id="closeWindow"
           >
             <path
               fill-rule="evenodd"
@@ -168,28 +170,12 @@
             />
           </svg>
         </div>
-        <div class="event-details" id="eventDetails">
-          <div class="event-name local">Lorem ipsum dolor sit amet.</div>
-          <div class="event-description local">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-            velit quod tenetur modi sed laborum odit laboriosam quisquam
-            excepturi. Tempore corrupti totam vel ipsum aut.
-          </div>
-          <div class="search-google">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.google.com/search?q="
-            >
-              Search In Google</a
-            >
-          </div>
-        </div>
+        <div class="event-details" id="eventDetails"></div>
       </div>
     </div>
-
     <script src="./js/calendar.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/events.js"></script>
+    <script src="./js/renderer.js"></script>
   </body>
 </html>
