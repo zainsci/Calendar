@@ -1,6 +1,6 @@
 # Dark-Themed Calendar
 
-![Dark-Themed Calendar] (./src/images/Calendar.png)
+![Dark-Themed Calendar] (https://github.com/zainsci/Calender/blob/master/src/images/Calendar.png)
 
 A Normal-Looking Dark-Themed Calendar made with electron.js and designed to look like Visual Studio Code with custom frame and Minimize and Close Button.
 
