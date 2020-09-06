@@ -151,6 +151,12 @@ ol {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 10px;
       margin-bottom: 10px;
+      .header-year-list {
+        ul {
+          max-height: 460px;
+          overflow-y: scroll;
+        }
+      }
       .header-year-list,
       .header-month-list,
       .header-events-list {
@@ -168,12 +174,13 @@ ol {
           flex-direction: column;
           justify-content: left !important;
           position: absolute;
-          top: 50px;
+          top: 10px;
           left: 0;
           z-index: 1000;
           li {
             padding: 8px 12px;
             text-align: left;
+            min-height: 40px;
             cursor: pointer;
             overflow: hidden;
             &:hover {
@@ -367,4 +374,17 @@ ol {
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $light;
+  opacity: 0.1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: $dark;
+  border-radius: 5px;
 }

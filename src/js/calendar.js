@@ -42,16 +42,6 @@ const d = new Date();
 document.getElementById("HeaderYear").innerHTML = d.getFullYear();
 document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
 
-// Runs after the DOMContent is loaded
-document.addEventListener("DOMContentLoaded", () => {
-  const d = new Date();
-  const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
-  printCalendar(calendar);
-  showEvents();
-  showDateAndEvents(d.getDate(), d.getDay());
-  highlightDate();
-});
-
 // Renders Month In DOM
 function printCalendar(calendar) {
   const monthGridDOM = document.getElementById("monthGrid");

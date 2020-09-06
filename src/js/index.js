@@ -36,28 +36,54 @@ headerValues.forEach((elem) => {
   });
 });
 
-// Closing Event details window
-document.getElementById("crossEvent").onclick = () => {
-  document.getElementById("popupEventWin").style.display = "none";
-};
-
-// Getting Today on Calender
-document.getElementById("HeaderToday").onclick = () => {
+// Runs after the DOMContent is loaded
+document.addEventListener("DOMContentLoaded", () => {
   const d = new Date();
-  document.getElementById("HeaderYear").innerHTML = d.getFullYear();
-  document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
   const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
   printCalendar(calendar);
   showEvents();
-  document.getElementById("select").innerHTML = `
-  ${monthList[d.getMonth()].slice(0, 3)} ${
-    d.getDay() - 1
-  }, ${d.getFullYear()} - ${dayName[d.getDay()].slice(0, 3)}
-  `;
-  document.getElementById("selectedDay").innerHTML = d.getDay() - 1;
-  showEventsInSection(monthList[d.getMonth()], d.getDay() - 1);
+  showDateAndEvents(d.getDate(), d.getDay());
   highlightDate();
-};
+
+  // Add List of Years in Header Year Box
+  const yearList = document.querySelector(".header-year-list");
+  yearList.innerHTML = "";
+  const ul = document.createElement("ul");
+  for (let i = 1971; i < 2070; i++) {
+    const li = document.createElement("li");
+    li.innerHTML = i;
+    ul.appendChild(li);
+  }
+  yearList.appendChild(ul);
+
+  // Displaying if any events on This day
+  appendEventsInDropdown();
+
+  // Closing Event details window
+  document.getElementById("crossEvent").onclick = () => {
+    document.getElementById("popupEventWin").style.display = "none";
+  };
+
+  // Getting Today on Calender
+  document.getElementById("HeaderToday").onclick = () => {
+    const d = new Date();
+    document.getElementById("HeaderYear").innerHTML = d.getFullYear();
+    document.getElementById("HeaderMonth").innerHTML = monthList[d.getMonth()];
+    const calendar = getCalender(d.getFullYear(), d.getMonth() + 1);
+    printCalendar(calendar);
+    showEvents();
+    document.getElementById("select").innerHTML = `
+  ${monthList[d.getMonth()].slice(
+    0,
+    3
+  )} ${d.getDate()}, ${d.getFullYear()} - ${dayName[d.getDay()].slice(0, 3)}
+  `;
+    console.log(d.getDay());
+    document.getElementById("selectedDay").innerHTML = d.getDate();
+    showEventsInSection(monthList[d.getMonth()], d.getDate());
+    highlightDate();
+  };
+});
 
 // Toggle Display
 function toggleDisplay(elem) {
@@ -70,6 +96,7 @@ function toggleDisplay(elem) {
   }
 }
 
+// Hightlights a selected date with white border
 function highlightDate() {
   document.querySelectorAll("li.date").forEach((day) => {
     day.addEventListener("click", () => {

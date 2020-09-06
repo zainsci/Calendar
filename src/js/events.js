@@ -76,3 +76,33 @@ function showEventDetails(event) {
   eventsDiv.appendChild(eventDes);
   document.getElementById("popupEvent").appendChild(eventSearch);
 }
+
+// Events for Dropdown
+function appendEventsInDropdown() {
+  fetch("./js/json/events.json")
+    .then((res) => res.json())
+    .then((data) => {
+      var allEvents = data;
+      const d = new Date();
+
+      if (allEvents[`${d.getDate()} ${monthList[d.getMonth()]}`]) {
+        const eventsLists = document.querySelector(".header-events-list");
+        const firstEvent = document.getElementById("HeaderEvent");
+        const ul = document.createElement("ul");
+
+        allEvents[`${d.getDate()} ${monthList[d.getMonth()]}`].forEach(
+          (event) => {
+            const li = document.createElement("li");
+            li.innerHTML = event.name;
+            li.addEventListener("click", () => {
+              showEventDetails(event);
+            });
+            ul.appendChild(li);
+          }
+        );
+        eventsLists.appendChild(ul);
+        firstEvent.innerHTML =
+          allEvents[`${d.getDate()} ${monthList[d.getMonth()]}`][0].name;
+      }
+    });
+}
