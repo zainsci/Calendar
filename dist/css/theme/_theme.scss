@@ -59,6 +59,8 @@ $light-theme: map-get($themes, "light");
   --gray-light: var(--gray300);
   --gray-dark: var(--gray700);
 
+  --box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 40%);
+
   .dark {
     --background: var(--gray900);
     --text: var(--gray100);
@@ -71,6 +73,7 @@ $light-theme: map-get($themes, "light");
     --toggler-bg: var(--gray100);
     --toggler-color: var(--gray900);
     --today-color: #{map-get($light-theme, "orange")};
+    --list-hr: var(--gray800);
 
     .sun {
       display: none !important;
@@ -89,6 +92,7 @@ $light-theme: map-get($themes, "light");
     --toggler-bg: var(--gray900);
     --toggler-color: var(--gray100);
     --today-color: #{map-get($light-theme, "orange")};
+    --list-hr: var(--gray100);
 
     .moon {
       display: none !important;

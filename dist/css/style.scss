@@ -53,11 +53,6 @@ ol {
   }
 }
 
-.today {
-  border: 2.5px solid var(--today-color) !important;
-  color: var(--today-color);
-}
-
 .event__day--local {
   background-color: var(--purple) !important;
 }
@@ -149,20 +144,20 @@ ol {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        overflow: hidden;
         white-space: nowrap;
 
-        &__year {
-          max-height: 460px;
-          overflow-y: scroll;
+        &--selected {
+          background-color: var(--background-box-hover);
         }
 
         &__year,
         &__month,
         &__event {
           width: 100%;
+          max-height: 460px;
+          overflow-y: scroll;
           background-color: var(--background-box);
-          box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.64);
+          box-shadow: var(--box-shadow);
           color: var(--text);
           display: flex;
           flex-direction: column;
@@ -170,6 +165,7 @@ ol {
           position: absolute;
           top: 40px;
           z-index: 1000;
+          display: none;
 
           li {
             padding: 8px 12px;
@@ -183,6 +179,10 @@ ol {
               color: var(--text);
             }
           }
+        }
+
+        hr {
+          border-color: var(--list-hr);
         }
       }
     }
@@ -213,6 +213,11 @@ ol {
         &--previous,
         &--next {
           color: var(--text-light);
+        }
+
+        &--today {
+          border: 2.5px solid var(--today-color) !important;
+          color: var(--today-color);
         }
 
         &--weekend {
