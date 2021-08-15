@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "dayjs": "^1.10.6"
+  },
   "devDependencies": {
     "css-loader": "^6.2.0",
-    "electron": "^10.1.0",
+    "electron": "^10.4.7",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.49.0",

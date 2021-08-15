@@ -3,8 +3,6 @@ const path = require("path")
 module.exports = {
   mode: "production",
   entry: {
-    calendar: ["./src/js/calendar.js"],
-    events: ["./src/js/events.js"],
     index: ["./src/js/index.js"],
   },
   output: {
