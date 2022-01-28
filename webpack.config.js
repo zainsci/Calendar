@@ -1,4 +1,5 @@
-const path = require("path")
+const CopyPlugin = require("copy-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   mode: "production",
@@ -9,13 +10,19 @@ module.exports = {
     path: path.resolve(__dirname, "dist/js"),
     filename: "[name].js",
   },
-  module: {
-    rules: [
-      {
-        test: /\.scss/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-    ],
-  },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "public"),
+          to: path.resolve(__dirname, "dist"),
+        },
+        {
+          from: path.resolve(__dirname, "src/main.js"),
+          to: path.resolve(__dirname, "dist"),
+        },
+      ],
+    }),
+  ],
   watch: true,
-}
+};

@@ -79,20 +79,7 @@
           </div>
           <div class="menu__list">
             <div id="MenuMonth">Aug</div>
-            <ul class="menu__list__month">
-              <li data-month="1">January</li>
-              <li data-month="2">February</li>
-              <li data-month="3">March</li>
-              <li data-month="4">April</li>
-              <li data-month="5">May</li>
-              <li data-month="6">June</li>
-              <li data-month="7">July</li>
-              <li data-month="8">August</li>
-              <li data-month="9">September</li>
-              <li data-month="10">October</li>
-              <li data-month="11">November</li>
-              <li data-month="12">December</li>
-            </ul>
+            <ul class="menu__list__month"></ul>
           </div>
           <div class="menu__list">
             <div id="MenuEvent"></div>
@@ -105,13 +92,13 @@
         <main id="CalenderBody" class="calendar">
           <header class="calendar__header">
             <ul class="weekdays">
-              <li class="weekend day box">Sun</li>
               <li class="day box">Mon</li>
               <li class="day box">Tue</li>
               <li class="day box">Wed</li>
               <li class="day box">Thu</li>
               <li class="day box">Fri</li>
-              <li class="weekend day box">Sat</li>
+              <li class="day box day--weekend">Sat</li>
+              <li class="day box day--weekend">Sun</li>
             </ul>
           </header>
           <div class="calendar__body" id="monthGrid"></div>

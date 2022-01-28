@@ -1,4 +1,5 @@
 @import "./theme/theme";
+@import "./media";
 
 * {
   padding: 0;
@@ -17,6 +18,7 @@ body {
   height: 100vh;
   min-width: 800px;
   min-height: 600px;
+  transition: background-color 0.5s ease-in;
 
   div {
     position: relative;
@@ -376,17 +378,22 @@ ol {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    .event-name {
+
+    .event__name {
+      color: var(--text);
       width: fit-content;
       border-radius: var(--br-sm);
       margin: 10px 0;
       padding: 8px 12px;
     }
-    .event-description {
+
+    .event__description {
+      color: var(--text);
       width: 100%;
       border-radius: var(--br-sm);
       padding: 8px 12px;
     }
+
     .cross {
       width: 24px;
       height: 24px;
@@ -406,7 +413,8 @@ ol {
         background-color: #d9dbdd;
       }
     }
-    .search-google {
+
+    .search__google {
       width: fit-content;
       padding: 8px 12px;
       background-color: #4285f4;
