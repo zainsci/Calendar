@@ -44,23 +44,29 @@
     const w = new Date(y, m, d).getDay()
     return w === 0 ? 7 : w
   }
+
+  function getClassNames(day, i) {
+    let className = [
+      "px-4 py-2 bg-gray-200 dark:bg-gray-800 sel ect-none flex flex-col justify-between hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer",
+    ]
+
+    if ((i + 1) % 7 === 0 || (i + 1) % 7 === 6) {
+      className.push("text-gray-500")
+    }
+
+    if ((i > 25 && day < 25) || (i < 10 && day > 10)) {
+      className.push("text-gray-500")
+    }
+
+    return className.join(" ")
+  }
 </script>
 
 <ul class="w-full h-full grid grid-cols-7 list-none gap-2">
   {#each getCalender(data.year, data.month) as day, i}
-    {#if (i + 1) % 7 === 0 || (i + 1) % 7 === 6}
-      <li
-        class="px-4 py-2 bg-gray-300 dark:bg-gray-700 select-none flex flex-col justify-between hover:bg-gray-400 dark:hover:bg-gray-600 cursor-pointer"
-      >
-        {day}
-      </li>
-    {:else}
-      <li
-        class="px-4 py-2 bg-gray-200 dark:bg-gray-800 select-none flex flex-col justify-between hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer"
-      >
-        {day}
-      </li>
-    {/if}
+    <li class={getClassNames(day, i)}>
+      {day}
+    </li>
   {/each}
 </ul>
 
