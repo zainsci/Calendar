@@ -114,3 +114,5 @@ out
 .yarn/install-state.gz
 .pnp.*
 /dist/
+/.vscode/
+.DS_Store
