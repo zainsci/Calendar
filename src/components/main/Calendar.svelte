@@ -3,6 +3,10 @@
 
   import globalStore from "../../lib/store"
   import Entry from "../calendar/Entry.svelte"
+  import NewEvent from "../events/NewEvent.svelte"
+
+  let addNewEvent = false
+  let eventDate = ""
 
   function getCalender(y, m) {
     const grid = []
@@ -42,11 +46,31 @@
     const w = new Date(y, m, d).getDay()
     return w === 0 ? 7 : w
   }
+
+  function addNewEventToCal(day) {
+    console.log("ADD NEW EVENT TO CALENDAR")
+
+    addNewEvent = !addNewEvent
+    eventDate = `${new Date($globalStore.month + 1 + " 1 2020").toLocaleString(
+      "default",
+      { month: "long" }
+    )} ${day}, ${$globalStore.year}`
+  }
+
+  function closeEventForm(e) {
+    e.stopPropagation()
+
+    addNewEvent = !addNewEvent
+  }
 </script>
+
+{#if addNewEvent}
+  <NewEvent date={eventDate} on:closeeventform={closeEventForm} />
+{/if}
 
 <ul class="w-full h-full grid grid-cols-7 list-none gap-2">
   {#each getCalender($globalStore.year, $globalStore.month) as day, i}
-    <Entry {day} idx={i} />
+    <Entry {day} idx={i} on:addnewevent={() => addNewEventToCal(day)} />
   {/each}
 </ul>
 

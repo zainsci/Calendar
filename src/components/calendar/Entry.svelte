@@ -1,4 +1,8 @@
 <script>
+  import { createEventDispatcher } from "svelte"
+
+  const dispatch = createEventDispatcher()
+
   import globalStore from "../../lib/store"
   import AddEvent from "./AddEvent.svelte"
 
@@ -50,6 +54,6 @@
   </span>
 
   {#if showEventButton}
-    <AddEvent />
+    <AddEvent onClick={() => dispatch("addnewevent")} />
   {/if}
 </li>
