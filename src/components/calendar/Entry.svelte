@@ -1,12 +1,15 @@
 <script>
   import globalStore from "../../lib/store"
+  import AddEvent from "./AddEvent.svelte"
 
   export let day
   export let idx
 
+  let showEventButton = false
+
   function getClassNames(day, idx) {
     let className = [
-      "px-4 py-2 bg-gray-200 dark:bg-gray-800 sel ect-none flex flex-col justify-between hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer",
+      "px-4 py-2 bg-gray-200 dark:bg-gray-800 sel ect-none flex flex-col justify-between hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer relative",
     ]
 
     if ((idx + 1) % 7 === 0 || (idx + 1) % 7 === 6) {
@@ -37,8 +40,16 @@
   }
 </script>
 
-<li class={getClassNames(day, idx)}>
+<li
+  class={getClassNames(day, idx)}
+  on:mouseenter={() => (showEventButton = true)}
+  on:mouseleave={() => (showEventButton = false)}
+>
   <span class={getCurrentDateClass(day, idx)}>
     {day}
   </span>
+
+  {#if showEventButton}
+    <AddEvent />
+  {/if}
 </li>
