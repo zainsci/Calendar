@@ -2,9 +2,9 @@
   import dayjs from "dayjs"
   import globalStore from "../../lib/store"
 
-  let data = {}
+  let selectedDate = {}
 
-  globalStore.subscribe((d) => (data = { ...d }))
+  globalStore.subscribe((d) => (selectedDate = { ...d }))
 
   function getCalender(y, m) {
     const grid = []
@@ -51,11 +51,27 @@
     ]
 
     if ((i + 1) % 7 === 0 || (i + 1) % 7 === 6) {
-      className.push("text-gray-500")
+      className.push("text-gray-500 dark:text-gray-400")
     }
 
     if ((i > 25 && day < 25) || (i < 10 && day > 10)) {
-      className.push("text-gray-500")
+      className.push("text-gray-500 dark:text-gray-400")
+    }
+
+    return className.join(" ")
+  }
+
+  function getCurrentDateClass(day, i) {
+    const className = ["w-6 h-6 flex justify-center items-center rounded-full"]
+
+    let d = new Date()
+    if (
+      selectedDate.month === d.getMonth() &&
+      day === d.getDay() - 1 &&
+      selectedDate.year === d.getFullYear() &&
+      i <= day
+    ) {
+      className.push("bg-red-500 text-white")
     }
 
     return className.join(" ")
@@ -63,9 +79,11 @@
 </script>
 
 <ul class="w-full h-full grid grid-cols-7 list-none gap-2">
-  {#each getCalender(data.year, data.month) as day, i}
+  {#each getCalender(selectedDate.year, selectedDate.month) as day, i}
     <li class={getClassNames(day, i)}>
-      {day}
+      <span class={getCurrentDateClass(day, i)}>
+        {day}
+      </span>
     </li>
   {/each}
 </ul>
