@@ -1,6 +1,11 @@
 <script>
   import { createEventDispatcher } from "svelte"
 
+  import Button from "../button/Button.svelte"
+  import Input from "../input/Input.svelte"
+  import Close from "../../icons/close.svelte"
+  import TextArea from "../textarea/TextArea.svelte"
+
   const dispatch = createEventDispatcher()
 
   export let date
@@ -29,27 +34,12 @@
     class="w-8 h-8 bg-gray-200 dark:bg-gray-700 select-none cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 flex justify-center items-center rounded-full absolute top-4 right-4"
     on:click={closeEventForm}
   >
-    X
+    <Close />
   </div>
   <form action="" on:submit={handleSubmit} class="flex flex-col">
     <h1 class="mb-4 text-2xl">Add A New Event To {date}</h1>
-    <input
-      type="text"
-      class="px-4 py-2 border-2 dark:bg-gray-900 border-purple-400 rounded-lg mb-4 focus:outline-none focus:border-purple-500"
-      placeholder="Add Event Names"
-    />
-    <textarea
-      name="eventDesc"
-      id="eventDesc"
-      cols="30"
-      rows="10"
-      class="px-4 py-2 border-2 dark:bg-gray-900 border-purple-400 rounded-lg mb-4 focus:outline-none focus:border-purple-500"
-      placeholder="Event Details Here!"
-    />
-    <button
-      class="px-4 py-2 text-white bg-purple-500 dark:bg-purple-400 hover:bg-purple-600  dark:hover:bg-purple-500 rounded-lg"
-    >
-      Add New Event
-    </button>
+    <Input placeholder="Event Name Here!" type="text" name="eventName" />
+    <TextArea name="eventDesc" placeholder="Event Details Here!" />
+    <Button>Add New Event</Button>
   </form>
 </div>
