@@ -1,6 +1,8 @@
 <script>
   import { createEventDispatcher } from "svelte"
 
+  import { checkIfNotFromThisMonth } from "../../lib/utils"
+
   const dispatch = createEventDispatcher()
 
   import globalStore from "../../lib/store"
@@ -20,7 +22,7 @@
       className.push("text-gray-500 dark:text-gray-400")
     }
 
-    if ((idx > 25 && day < 25) || (idx < 10 && day > 10)) {
+    if (checkIfNotFromThisMonth(day, idx)) {
       className.push("text-gray-500 dark:text-gray-400")
     }
 
@@ -53,7 +55,9 @@
     {day}
   </span>
 
-  {#if showEventButton}
-    <AddEvent onClick={() => dispatch("addnewevent")} />
+  {#if !checkIfNotFromThisMonth(day, idx)}
+    {#if showEventButton}
+      <AddEvent onClick={() => dispatch("addnewevent")} />
+    {/if}
   {/if}
 </li>
