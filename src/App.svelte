@@ -12,7 +12,7 @@
   <title>Home - Calendar</title>
 </svelte:head>
 
-<div class="text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-900">
+<div class="text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900">
   <Frame />
   <Header />
   <main class="w-full grid grid-cols-4">

@@ -1,27 +1,13 @@
 <script>
-  const days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ]
+  import { DAYS } from "../../lib/constants"
 </script>
 
 <header class="w-full mb-2">
   <ul class="w-full grid grid-cols-7 gap-2 list-none">
-    {#each days as day}
-      {#if ["Saturday", "Sunday"].includes(day)}
-        <li class="w-full bg-gray-200 dark:bg-gray-800 px-4 py-2 text-gray-500">
-          {day.slice(0, 3)}
-        </li>
-      {:else}
-        <li class="w-full bg-gray-200 dark:bg-gray-800 px-4 py-2">
-          {day.slice(0, 3)}
-        </li>
-      {/if}
+    {#each DAYS as day}
+      <li class="w-full bg-gray-200 dark:bg-gray-800 px-4 py-2">
+        {day.slice(0, 3)}
+      </li>
     {/each}
   </ul>
 </header>

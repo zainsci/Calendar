@@ -4,6 +4,7 @@
   import globalStore from "../../lib/store"
   import Entry from "../calendar/Entry.svelte"
   import NewEvent from "../events/NewEvent.svelte"
+  import { MONTHS } from "../../lib/constants"
 
   let addNewEvent = false
   let eventDate = ""
@@ -48,13 +49,8 @@
   }
 
   function addNewEventToCal(day) {
-    console.log("ADD NEW EVENT TO CALENDAR")
-
     addNewEvent = !addNewEvent
-    eventDate = `${new Date($globalStore.month + 1 + " 1 2020").toLocaleString(
-      "default",
-      { month: "long" }
-    )} ${day}, ${$globalStore.year}`
+    eventDate = `${MONTHS[$globalStore.month]} ${day}, ${$globalStore.year}`
   }
 
   function closeEventForm(e) {
