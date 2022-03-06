@@ -32,7 +32,7 @@
   </div>
   {#if isOpen}
     <ul
-      class="max-h-96 w-full overflow-y-scroll whitespace-nowrap list-none absolute top-12 left-0 shadow-md"
+      class="max-h-96 w-full overflow-y-scroll whitespace-nowrap list-none absolute top-12 left-0 shadow-md z-10"
     >
       {#each list as x}
         <li
