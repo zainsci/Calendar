@@ -1,5 +1,6 @@
 <script>
   import globalStore from "../lib/store"
+  import { MONTHS } from "../lib/constants"
 
   export let name = ""
   export let list = []
@@ -14,12 +15,12 @@
       x = new Date(`${x} 1 2022`).getMonth()
     }
 
-    const newGlobalState = {
-      ...$globalStore,
-      [type]: x,
-    }
-
-    globalStore.set(newGlobalState)
+    globalStore.update((store) => {
+      return {
+        ...store,
+        [type]: x,
+      }
+    })
   }
 </script>
 
@@ -28,7 +29,13 @@
     class="w-full h-full flex justify-center items-center cursor-pointer whitespace-nowrap select-none"
     on:click={() => (isOpen = !isOpen)}
   >
-    {name}
+    {#if typeof $globalStore[type] !== "undefined"}
+      {#if type === "month"}
+        {MONTHS[$globalStore[type]]}
+      {:else}
+        {$globalStore[type]}
+      {/if}
+    {/if}
   </div>
   {#if isOpen}
     <ul

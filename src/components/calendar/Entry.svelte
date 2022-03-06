@@ -1,7 +1,11 @@
 <script>
   import { createEventDispatcher } from "svelte"
 
-  import { checkIfNotFromThisMonth } from "../../lib/utils"
+  import {
+    checkIfFromNextMonth,
+    checkIfFromPrevMonth,
+    checkIfNotFromThisMonth,
+  } from "../../lib/utils"
 
   import globalStore from "../../lib/store"
   import AddEvent from "./AddEvent.svelte"
@@ -32,7 +36,6 @@
     const className = ["w-6 h-6 flex justify-center items-center rounded-full"]
 
     let d = new Date()
-    console.log($globalStore)
     if (
       $globalStore.month === d.getMonth() &&
       day === d.getDate() &&
@@ -44,12 +47,37 @@
 
     return className.join(" ")
   }
+
+  function handleClick(day, idx) {
+    if (checkIfFromNextMonth(day, idx)) {
+      globalStore.update((date) => {
+        return {
+          ...date,
+          month: date.month === 11 ? 0 : date.month + 1,
+          year: date.month === 11 ? date.year + 1 : date.year,
+        }
+      })
+    }
+
+    if (checkIfFromPrevMonth(day, idx)) {
+      globalStore.update((date) => {
+        return {
+          ...date,
+          month: date.month === 0 ? 11 : date.month - 1,
+          year: date.month === 0 ? date.year - 1 : date.year,
+        }
+      })
+    }
+
+    return
+  }
 </script>
 
 <li
   class={getClassNames(day, idx)}
   on:mouseenter={() => (showEventButton = true)}
   on:mouseleave={() => (showEventButton = false)}
+  on:click={() => handleClick(day, idx)}
 >
   <span class={getCurrentDateClass(day, idx)}>
     {day}

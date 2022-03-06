@@ -7,5 +7,5 @@ export function checkIfFromPrevMonth(day, idx) {
 }
 
 export function checkIfFromNextMonth(day, idx) {
-  return !!(idx < 10 && day > 10)
+  return !!(idx > 28 && day < 20)
 }
