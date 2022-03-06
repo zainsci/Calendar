@@ -1,9 +1,9 @@
 <script>
   import dayjs from "dayjs"
 
-  import globalStore from "../../lib/store"
+  import { dateStore } from "../../lib/store"
   import Entry from "../calendar/Entry.svelte"
-  import NewEvent from "../events/NewEvent.svelte"
+  import NewEvent from "../notes/NewNote.svelte"
   import { MONTHS } from "../../lib/constants"
 
   let addNewEvent = false
@@ -50,7 +50,7 @@
 
   function addNewEventToCal(day) {
     addNewEvent = !addNewEvent
-    eventDate = `${MONTHS[$globalStore.month]} ${day}, ${$globalStore.year}`
+    eventDate = `${MONTHS[$dateStore.month]} ${day}, ${$dateStore.year}`
   }
 
   function closeEventForm(e) {
@@ -65,7 +65,7 @@
 {/if}
 
 <ul class="w-full h-full grid grid-cols-7 list-none gap-2">
-  {#each getCalender($globalStore.year, $globalStore.month) as day, i}
+  {#each getCalender($dateStore.year, $dateStore.month) as day, i}
     <Entry {day} idx={i} on:addnewevent={() => addNewEventToCal(day)} />
   {/each}
 </ul>

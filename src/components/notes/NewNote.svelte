@@ -1,10 +1,15 @@
 <script>
   import { createEventDispatcher } from "svelte"
 
+  import { notesStore } from "../../lib/store"
+
   import Button from "../button/Button.svelte"
   import Input from "../input/Input.svelte"
   import Close from "../../icons/close.svelte"
   import TextArea from "../textarea/TextArea.svelte"
+
+  let noteTitle = ""
+  let noteDesc = ""
 
   const dispatch = createEventDispatcher()
 
@@ -12,7 +17,25 @@
   function handleSubmit(e) {
     e.preventDefault()
 
-    console.log(e)
+    const d = new Date(date)
+
+    notesStore.update((store) => {
+      const thisNote = {
+        id: Date.now().toString(),
+        title: noteTitle,
+        note: noteDesc,
+        date: {
+          date: d.getDate(),
+          month: d.getMonth(),
+          year: d.getFullYear(),
+        },
+      }
+
+      return [...store, thisNote]
+    })
+
+    noteTitle = ""
+    noteDesc = ""
   }
 
   function closeEventForm(e) {
@@ -38,8 +61,16 @@
   </div>
   <form action="" on:submit={handleSubmit} class="flex flex-col">
     <h1 class="mb-4 text-2xl">Add A New Event To {date}</h1>
-    <Input placeholder="Event Name Here!" type="text" name="eventName" />
-    <TextArea name="eventDesc" placeholder="Event Details Here!" />
+    <Input
+      placeholder="Event Name Here!"
+      name="eventName"
+      bind:value={noteTitle}
+    />
+    <TextArea
+      name="eventDesc"
+      placeholder="Event Details Here!"
+      bind:value={noteDesc}
+    />
     <Button>Add New Event</Button>
   </form>
 </div>

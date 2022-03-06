@@ -7,8 +7,8 @@
     checkIfNotFromThisMonth,
   } from "../../lib/utils"
 
-  import globalStore from "../../lib/store"
-  import AddEvent from "./AddEvent.svelte"
+  import { dateStore } from "../../lib/store"
+  import AddEvent from "./AddNote.svelte"
 
   export let day
   export let idx
@@ -37,9 +37,9 @@
 
     let d = new Date()
     if (
-      $globalStore.month === d.getMonth() &&
+      $dateStore.month === d.getMonth() &&
       day === d.getDate() &&
-      $globalStore.year === d.getFullYear() &&
+      $dateStore.year === d.getFullYear() &&
       idx <= 31
     ) {
       className.push("bg-red-500 text-white")
@@ -50,7 +50,7 @@
 
   function handleClick(day, idx) {
     if (checkIfFromNextMonth(day, idx)) {
-      globalStore.update((date) => {
+      dateStore.update((date) => {
         return {
           ...date,
           month: date.month === 11 ? 0 : date.month + 1,
@@ -60,7 +60,7 @@
     }
 
     if (checkIfFromPrevMonth(day, idx)) {
-      globalStore.update((date) => {
+      dateStore.update((date) => {
         return {
           ...date,
           month: date.month === 0 ? 11 : date.month - 1,

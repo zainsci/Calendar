@@ -1,5 +1,5 @@
 <script>
-  import globalStore from "../lib/store"
+  import { dateStore } from "../lib/store"
   import { MONTHS } from "../lib/constants"
 
   export let name = ""
@@ -15,7 +15,7 @@
       x = new Date(`${x} 1 2022`).getMonth()
     }
 
-    globalStore.update((store) => {
+    dateStore.update((store) => {
       return {
         ...store,
         [type]: x,
@@ -29,11 +29,11 @@
     class="w-full h-full flex justify-center items-center cursor-pointer whitespace-nowrap select-none"
     on:click={() => (isOpen = !isOpen)}
   >
-    {#if typeof $globalStore[type] !== "undefined"}
+    {#if typeof $dateStore[type] !== "undefined"}
       {#if type === "month"}
-        {MONTHS[$globalStore[type]]}
+        {MONTHS[$dateStore[type]]}
       {:else}
-        {$globalStore[type]}
+        {$dateStore[type]}
       {/if}
     {/if}
   </div>
