@@ -1,8 +1,8 @@
 <script lang="ts">
-  import ThemeToggler from "../components/side-bar/ThemeToggler.svelte"
-  import FullDate from "../components/side-bar/FullDate.svelte"
-  import Notes from "../components/side-bar/Notes.svelte"
-  import NoteViewer from "../components/notes/NoteViewer.svelte"
+  import ThemeToggler from "./side-bar/ThemeToggler.svelte"
+  import FullDate from "./side-bar/FullDate.svelte"
+  import Notes from "./side-bar/Notes.svelte"
+  import NoteViewer from "./notes/NoteViewer.svelte"
 
   let noteId = ""
 

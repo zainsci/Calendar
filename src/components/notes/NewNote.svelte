@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { createEventDispatcher } from "svelte"
 
   import { notesStore } from "../../lib/store"
@@ -13,7 +13,7 @@
 
   const dispatch = createEventDispatcher()
 
-  export let date
+  export let date: string
   function handleSubmit(e) {
     e.preventDefault()
 

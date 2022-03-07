@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
   import { createEventDispatcher, onMount } from "svelte"
 
   import { notesStore } from "../../lib/store"
   import Close from "../../icons/close.svelte"
   import { MONTHS } from "../../lib/constants"
 
-  export let noteId = ""
-  let thisNote = {}
+  import type { Note } from "../../lib/types"
+
+  export let noteId: string
+  let thisNote: Note
   const dispatch = createEventDispatcher()
 
   onMount(() => {

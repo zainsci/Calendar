@@ -1,8 +1,6 @@
 <script lang="ts">
-  import DaysHeader from "../components/main/DaysHeader.svelte";
-  import Calendar from "../components/main/Calendar.svelte";
-
-  const name = "MAIN";
+  import DaysHeader from "./main/DaysHeader.svelte"
+  import Calendar from "./main/Calendar.svelte"
 </script>
 
 <div

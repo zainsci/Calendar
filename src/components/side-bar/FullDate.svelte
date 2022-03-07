@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
   function getFullDate() {
-    const thisDay = new Date();
+    const thisDay = new Date()
 
     return `${thisDay.toLocaleDateString("en-US", {
       weekday: "long",
     })} - ${thisDay.toLocaleDateString("en-US", {
       month: "long",
-    })} ${thisDay.getDate()}, ${thisDay.getFullYear()}`;
+    })} ${thisDay.getDate()}, ${thisDay.getFullYear()}`
   }
 </script>
 

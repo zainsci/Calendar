@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
   import { createEventDispatcher } from "svelte"
   import { notesStore, dateStore } from "../../lib/store"
 
+  import type { Note } from "../../lib/types"
+
   const dispatch = createEventDispatcher()
 
-  let allNotes = []
+  let allNotes: Note[]
   notesStore.subscribe((store) => (allNotes = store))
 
   function showNote(id) {

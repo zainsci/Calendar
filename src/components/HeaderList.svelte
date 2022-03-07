@@ -1,13 +1,13 @@
-<script>
+<script lang="ts">
   import { dateStore } from "../lib/store"
   import { MONTHS } from "../lib/constants"
 
-  export let name = ""
+  export let name: string | number
   export let list = []
   export let type = ""
   let isOpen = false
 
-  function updateDate(x) {
+  function updateDate(x: string | number) {
     name = x
     isOpen = false
 

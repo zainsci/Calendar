@@ -1,8 +1,8 @@
-<script>
-  export let placeholder
-  export let name
+<script lang="ts">
+  export let placeholder: string
+  export let name: string
+  export let value: string
   export let label = ""
-  export let value = ""
 </script>
 
 <label for={name} class="flex flex-col">

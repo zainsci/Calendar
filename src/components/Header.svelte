@@ -1,7 +1,7 @@
 <script lang="ts">
-  import HeaderList from "../components/HeaderList.svelte";
+  import HeaderList from "./HeaderList.svelte"
 
-  const yearList = Array.from({ length: 100 }, (_, i) => 1970 + i);
+  const yearList = Array.from({ length: 100 }, (_, i) => 1970 + i)
   const monthList = [
     "January",
     "February",
@@ -15,10 +15,7 @@
     "October",
     "November",
     "December",
-  ];
-
-  let isYearOpen = false;
-  let isMonthOpen = false;
+  ]
 </script>
 
 <header

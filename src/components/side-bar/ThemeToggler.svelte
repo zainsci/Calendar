@@ -1,17 +1,17 @@
-<script>
-  import SunIcon from "../../icons/sun.svelte";
-  import MoonIcon from "../../icons/moon.svelte";
-  let darkTheme = false;
+<script lang="ts">
+  import SunIcon from "../../icons/sun.svelte"
+  import MoonIcon from "../../icons/moon.svelte"
+  let darkTheme = false
 
   function toggleTheme() {
-    darkTheme = !darkTheme;
+    darkTheme = !darkTheme
 
     if (darkTheme) {
-      document.documentElement.classList.add("dark");
-      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark")
+      window.localStorage.setItem("theme", "dark")
     } else {
-      document.documentElement.classList.remove("dark");
-      window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark")
+      window.localStorage.setItem("theme", "light")
     }
   }
 </script>

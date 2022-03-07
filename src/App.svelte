@@ -1,11 +1,11 @@
 <script lang="ts">
   import "./css/app.css"
 
-  import Frame from "./lib/Frame.svelte"
+  import Frame from "./components/Frame.svelte"
 
-  import Header from "./lib/Header.svelte"
-  import Main from "./lib/Main.svelte"
-  import SideBar from "./lib/SideBar.svelte"
+  import Header from "./components/Header.svelte"
+  import Main from "./components/Main.svelte"
+  import SideBar from "./components/SideBar.svelte"
 </script>
 
 <svelte:head>

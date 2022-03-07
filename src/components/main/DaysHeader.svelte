@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { DAYS } from "../../lib/constants"
 </script>
 

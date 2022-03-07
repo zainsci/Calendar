@@ -1,9 +1,7 @@
-<script>
-  import CalendarIcon from "../icons/calendar.svelte";
-  import MinimizeIcon from "../icons/minimize.svelte";
-  import CloseIcon from "../icons/close.svelte";
-
-  const name = "FRAME";
+<script lang="ts">
+  import CalendarIcon from "../icons/calendar.svelte"
+  import MinimizeIcon from "../icons/minimize.svelte"
+  import CloseIcon from "../icons/close.svelte"
 </script>
 
 <div

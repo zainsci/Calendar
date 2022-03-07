@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { createEventDispatcher } from "svelte"
 
   import {
@@ -10,13 +10,13 @@
   import { dateStore } from "../../lib/store"
   import AddEvent from "./AddNote.svelte"
 
-  export let day
-  export let idx
+  export let day: number
+  export let idx: number
 
   const dispatch = createEventDispatcher()
   let showEventButton = false
 
-  function getClassNames(day, idx) {
+  function getClassNames(day: number, idx: number) {
     let className = [
       "px-4 py-2 bg-gray-100 dark:bg-gray-800 sel ect-none flex flex-col justify-between hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer relative",
     ]
@@ -32,7 +32,7 @@
     return className.join(" ")
   }
 
-  function getCurrentDateClass(day, idx) {
+  function getCurrentDateClass(day: number, idx: number) {
     const className = ["w-6 h-6 flex justify-center items-center rounded-full"]
 
     let d = new Date()
@@ -48,7 +48,7 @@
     return className.join(" ")
   }
 
-  function handleClick(day, idx) {
+  function handleClick(day: number, idx: number) {
     if (checkIfFromNextMonth(day, idx)) {
       dateStore.update((date) => {
         return {

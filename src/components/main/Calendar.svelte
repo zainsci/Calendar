@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import dayjs from "dayjs"
 
   import { dateStore } from "../../lib/store"
@@ -7,12 +7,10 @@
   import { MONTHS } from "../../lib/constants"
 
   let addNewEvent = false
-  let eventDate = ""
+  let eventDate: string
 
-  function getCalender(y, m) {
+  function getCalender(y: number, m: number): number[] {
     const grid = []
-    y = parseInt(y, 10)
-    m = parseInt(m, 10)
 
     const preYear = m === 0 ? y - 1 : y
     const preMonth = m === 0 ? 11 : m - 1
@@ -43,12 +41,12 @@
   }
 
   // To get the day of the week
-  function getWeekDay(y, m, d) {
+  function getWeekDay(y: number, m: number, d: number) {
     const w = new Date(y, m, d).getDay()
     return w === 0 ? 7 : w
   }
 
-  function addNewEventToCal(day) {
+  function addNewEventToCal(day: number) {
     addNewEvent = !addNewEvent
     eventDate = `${MONTHS[$dateStore.month]} ${day}, ${$dateStore.year}`
   }
