@@ -1,20 +1,24 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte"
 
+  import type { Note } from "../../lib/types"
   import {
     checkIfFromNextMonth,
     checkIfFromPrevMonth,
     checkIfNotFromThisMonth,
+    getThisDayNotes,
   } from "../../lib/utils"
 
-  import { dateStore } from "../../lib/store"
+  import { dateStore, notesStore } from "../../lib/store"
   import AddEvent from "./AddNote.svelte"
 
   export let day: number
   export let idx: number
+  let showEventButton = false
+  let allNotes: Note[]
+  notesStore.subscribe((notes) => (allNotes = notes))
 
   const dispatch = createEventDispatcher()
-  let showEventButton = false
 
   function getClassNames(day: number, idx: number) {
     let className = [
@@ -82,6 +86,12 @@
   <span class={getCurrentDateClass(day, idx)}>
     {day}
   </span>
+
+  <div class="h-4 flex">
+    {#each getThisDayNotes(allNotes, day, idx) as _}
+      <span class="w-2 h-2 bg-purple-500 ml-2 rounded-full" />
+    {/each}
+  </div>
 
   {#if !checkIfNotFromThisMonth(day, idx)}
     {#if showEventButton}

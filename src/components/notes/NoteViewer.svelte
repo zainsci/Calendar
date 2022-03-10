@@ -5,10 +5,10 @@
   import Close from "../../icons/close.svelte"
   import { MONTHS } from "../../lib/constants"
 
-  import type { Note } from "../../lib/types"
+  import type { NoteProps } from "../../lib/types"
 
   export let noteId: string
-  let thisNote: Note
+  let thisNote: NoteProps
   const dispatch = createEventDispatcher()
 
   onMount(() => {

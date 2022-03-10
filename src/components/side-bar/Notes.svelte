@@ -2,15 +2,15 @@
   import { createEventDispatcher } from "svelte"
   import { notesStore, dateStore } from "../../lib/store"
 
-  import type { Note } from "../../lib/types"
+  import type { NoteProps } from "../../lib/types"
   import { getThisMonthNotes } from "../../lib/utils"
 
   const dispatch = createEventDispatcher()
 
-  let allNotes: Note[]
+  let allNotes: NoteProps[]
   notesStore.subscribe((notes) => (allNotes = notes))
 
-  function showNote(id) {
+  function showNote(id: string) {
     dispatch("createnewnote", {
       noteId: id,
     })
