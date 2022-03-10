@@ -1,6 +1,7 @@
 <script lang="ts">
   import SunIcon from "../../icons/sun.svelte"
   import MoonIcon from "../../icons/moon.svelte"
+
   let darkTheme = false
 
   function toggleTheme() {
@@ -17,9 +18,8 @@
 </script>
 
 <div class="flex justify-between items-center p-2">
-  <div class="status">Theme: {darkTheme ? "Dark" : "Light"}</div>
   <div
-    class="flex justify-center items-center p-2 rounded-full cursor-pointer transition-all ease-linear duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+    class="ml-auto flex justify-center items-center p-2 rounded-full cursor-pointer transition-all ease-linear duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
     on:click={toggleTheme}
   >
     {#if darkTheme}

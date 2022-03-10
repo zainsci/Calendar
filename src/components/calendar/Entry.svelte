@@ -1,21 +1,20 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte"
 
-  import type { Note } from "../../lib/types"
+  import type { NoteProps } from "../../lib/types"
   import {
     checkIfFromNextMonth,
     checkIfFromPrevMonth,
     checkIfNotFromThisMonth,
     getThisDayNotes,
   } from "../../lib/utils"
-
   import { dateStore, notesStore } from "../../lib/store"
   import AddEvent from "./AddNote.svelte"
 
   export let day: number
   export let idx: number
   let showEventButton = false
-  let allNotes: Note[]
+  let allNotes: NoteProps[]
   notesStore.subscribe((notes) => (allNotes = notes))
 
   const dispatch = createEventDispatcher()
@@ -95,7 +94,7 @@
 
   {#if !checkIfNotFromThisMonth(day, idx)}
     {#if showEventButton}
-      <AddEvent onClick={() => dispatch("addnewevent")} />
+      <AddEvent onClick={() => dispatch("addnewnote")} />
     {/if}
   {/if}
 </li>

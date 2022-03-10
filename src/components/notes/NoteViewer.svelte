@@ -4,7 +4,6 @@
   import { notesStore } from "../../lib/store"
   import Close from "../../icons/close.svelte"
   import { MONTHS } from "../../lib/constants"
-
   import type { NoteProps } from "../../lib/types"
 
   export let noteId: string

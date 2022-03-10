@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="bg-gray-300 dark:bg-gray-800 h-10 w-full m-auto rounded-lg p-2 whitespace-nowrap text-center"
+  class="bg-gray-300 dark:bg-gray-800  w-full m-auto rounded-lg p-2 whitespace-pre-wrap text-center"
 >
   {getFullDate()}
 </div>

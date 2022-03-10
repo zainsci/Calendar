@@ -2,19 +2,18 @@
   import { createEventDispatcher } from "svelte"
 
   import { notesStore } from "../../lib/store"
-
   import Button from "../button/Button.svelte"
   import Input from "../input/Input.svelte"
   import Close from "../../icons/close.svelte"
   import TextArea from "../textarea/TextArea.svelte"
 
-  let noteTitle = ""
-  let noteDesc = ""
+  export let date: string
+  let noteTitle: string
+  let noteDesc: string
   let showError = false
 
   const dispatch = createEventDispatcher()
 
-  export let date: string
   function handleSubmit(e) {
     e.preventDefault()
 
@@ -52,7 +51,7 @@
   function closeEventForm(e) {
     e.stopPropagation()
 
-    dispatch("closeeventform")
+    dispatch("closenoteeditor")
   }
 </script>
 

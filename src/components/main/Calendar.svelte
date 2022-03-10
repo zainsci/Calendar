@@ -59,12 +59,12 @@
 </script>
 
 {#if addNewEvent}
-  <NewEvent date={eventDate} on:closeeventform={closeEventForm} />
+  <NewEvent date={eventDate} on:closenoteeditor={closeEventForm} />
 {/if}
 
 <ul class="w-full h-full grid grid-cols-7 list-none gap-2">
   {#each getCalender($dateStore.year, $dateStore.month) as day, i}
-    <Entry {day} idx={i} on:addnewevent={() => addNewEventToCal(day)} />
+    <Entry {day} idx={i} on:addnewnote={() => addNewEventToCal(day)} />
   {/each}
 </ul>
 
