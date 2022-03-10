@@ -4,7 +4,7 @@
   export let cols = 30
   export let rows = 10
   export let label = ""
-  export let value = ""
+  export let value: string
 </script>
 
 <label for={name} class="flex flex-col">
@@ -20,6 +20,7 @@
     {rows}
     class="px-4 py-2 border-2 dark:bg-gray-900 border-purple-400 rounded-lg mb-4 focus:outline-none focus:border-purple-500"
     {placeholder}
+    on:change
     bind:value
   />
 </label>

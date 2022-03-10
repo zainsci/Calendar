@@ -10,12 +10,23 @@
 
   let noteTitle = ""
   let noteDesc = ""
+  let showError = false
 
   const dispatch = createEventDispatcher()
 
   export let date: string
   function handleSubmit(e) {
     e.preventDefault()
+
+    if (noteTitle === "") {
+      showError = true
+
+      setTimeout(() => {
+        showError = false
+      }, 2000)
+
+      return
+    }
 
     const d = new Date(date)
 
@@ -65,12 +76,16 @@
       placeholder="Event Name Here!"
       name="eventName"
       bind:value={noteTitle}
+      error={showError}
     />
     <TextArea
       name="eventDesc"
       placeholder="Event Details Here!"
       bind:value={noteDesc}
     />
+    {#if showError}
+      <div class="text-red-500 mb-4">A note must have a title</div>
+    {/if}
     <Button>Add New Event</Button>
   </form>
 </div>
