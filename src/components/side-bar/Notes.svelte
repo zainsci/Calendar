@@ -17,7 +17,7 @@
 </script>
 
 <div class="flex flex-col gap-2 mt-4">
-  {#each allNotes.filter((note) => note.date.month === $dateStore.month) as note}
+  {#each allNotes.filter((note) => note.date.month === $dateStore.month && note.date.year === $dateStore.year) as note}
     <div
       class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 cursor-pointer"
       on:click={() => showNote(note.id)}
