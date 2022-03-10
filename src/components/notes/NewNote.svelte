@@ -71,21 +71,21 @@
     <Close />
   </div>
   <form action="" on:submit={handleSubmit} class="flex flex-col">
-    <h1 class="mb-4 text-2xl">Add A New Event To {date}</h1>
+    <h1 class="mb-4 text-2xl">Add A New Note To {date}</h1>
     <Input
-      placeholder="Event Name Here!"
+      placeholder="Note Title Here!"
       name="eventName"
       bind:value={noteTitle}
       error={showError}
     />
     <TextArea
       name="eventDesc"
-      placeholder="Event Details Here!"
+      placeholder="Note Details Here!"
       bind:value={noteDesc}
     />
     {#if showError}
       <div class="text-red-500 mb-4">A note must have a title</div>
     {/if}
-    <Button>Add New Event</Button>
+    <Button>Add New Note</Button>
   </form>
 </div>
