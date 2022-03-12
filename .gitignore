@@ -113,6 +113,6 @@ out
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-/dist/
+dist/
 /.vscode/
 .DS_Store
