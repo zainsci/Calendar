@@ -1,25 +1,18 @@
-(function () {
-  const { remote } = require("electron");
+import { isElectron } from "./utils"
 
-  function init() {
-    document
-      .getElementById("minimizeWindow")
-      .addEventListener("click", function (e) {
-        var window = remote.getCurrentWindow();
-        window.minimize();
-      });
+declare const window: { electronAPI: any }
 
-    document
-      .getElementById("closeWindow")
-      .addEventListener("click", function (e) {
-        const window = remote.getCurrentWindow();
-        window.close();
-      });
-  }
+if (isElectron()) {
+  document
+    .getElementById("minimizeWindow")
+    .addEventListener("click", function (e) {
+      window.electronAPI.minimizeWindow()
+    })
 
-  document.onreadystatechange = function () {
-    if (document.readyState == "complete") {
-      init();
-    }
-  };
-})();
+  document
+    .getElementById("closeWindow")
+    .addEventListener("click", function (e) {
+      window.electronAPI.closeWindow()
+      console.log("HERE")
+    })
+}
